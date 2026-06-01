@@ -1,18 +1,117 @@
 {
-  "versao": "6.5",
+  "versao": "6.6",
   "ultimaAtualizacao": "2026-06-11",
   "projetoBase": "PMO Executivo Mensal - COI / Central DF / AURA",
   "responsavelPrincipal": "Anderson Pinheiro",
-  "observacao": "Projeto Chat Humano AURA atualizado para Em andamento, com registro das atividades concluídas em Maio/2026 e pendência de priorização do Portal de Atendimento Humano com prazo previsto para 05/06/2026.",
+  "observacao": "Painel renomeado para Painel Executivo COI e estruturado com seção de Tarefas Concluídas para evidenciar atividades executadas e trabalho realizado.",
   "dashboard": {
     "projetosAtivos": 14,
     "atividadesConcluidasMes": 14,
+    "tarefasConcluidas": 12,
     "demandasConcluidas": 1,
     "incidentesAbertos": 0,
     "incidentesResolvidos": 1,
     "pendenciasExecutivas": 7,
     "entregasProximas": 7
   },
+  "tarefasConcluidas": [
+    {
+      "mes": "Maio/2026",
+      "data": "Maio/2026",
+      "projeto": "Transbordo URA → WhatsApp AURA",
+      "tarefa": "Reunião de alinhamento com Lucas",
+      "responsavel": "Lucas / Equipe COI",
+      "status": "Concluído"
+    },
+    {
+      "mes": "Maio/2026",
+      "data": "Maio/2026",
+      "projeto": "Transbordo URA → WhatsApp AURA",
+      "tarefa": "Mapeamento do fluxo atual",
+      "responsavel": "Lucas / Equipe COI",
+      "status": "Concluído"
+    },
+    {
+      "mes": "Maio/2026",
+      "data": "Maio/2026",
+      "projeto": "Transbordo URA → WhatsApp AURA",
+      "tarefa": "Criação do ambiente de homologação do WhatsApp com o número (61) 99974-5325",
+      "responsavel": "Equipe técnica",
+      "status": "Concluído"
+    },
+    {
+      "mes": "Maio/2026",
+      "data": "22/05/2026",
+      "projeto": "Transbordo URA → WhatsApp AURA",
+      "tarefa": "Teste do ambiente de homologação",
+      "responsavel": "Equipe técnica",
+      "status": "Concluído"
+    },
+    {
+      "mes": "Maio/2026",
+      "data": "Maio/2026",
+      "projeto": "Transbordo URA → WhatsApp AURA",
+      "tarefa": "Validação do ambiente de homologação",
+      "responsavel": "Lucas / Equipe técnica",
+      "status": "Concluído"
+    },
+    {
+      "mes": "Maio/2026",
+      "data": "Maio/2026",
+      "projeto": "Transbordo URA → WhatsApp AURA",
+      "tarefa": "Início dos testes funcionais",
+      "responsavel": "Lucas / Equipe técnica",
+      "status": "Concluído"
+    },
+    {
+      "mes": "Maio/2026",
+      "data": "Maio/2026",
+      "projeto": "Chat Humano AURA",
+      "tarefa": "Reunião de alinhamento com Lucas",
+      "responsavel": "Lucas / Equipe COI",
+      "status": "Concluído"
+    },
+    {
+      "mes": "Maio/2026",
+      "data": "Maio/2026",
+      "projeto": "Chat Humano AURA",
+      "tarefa": "Mapeamento do fluxo atual",
+      "responsavel": "Lucas / Equipe COI",
+      "status": "Concluído"
+    },
+    {
+      "mes": "Junho/2026",
+      "data": "01/06/2026",
+      "projeto": "Gupshup – Falha no Recebimento de Código 2FA",
+      "tarefa": "Ativação do MFA com Microsoft Authenticator e validação de acesso à plataforma",
+      "responsavel": "Anderson Pinheiro",
+      "status": "Concluído"
+    },
+    {
+      "mes": "Junho/2026",
+      "data": "01/06/2026",
+      "projeto": "Central DF – Conta Gupshup",
+      "tarefa": "Conclusão da atualização de razão social e CNPJ da conta Gupshup",
+      "responsavel": "Anderson Pinheiro",
+      "status": "Concluído"
+    },
+    {
+      "mes": "Junho/2026",
+      "data": "Junho/2026",
+      "projeto": "Painel Executivo COI",
+      "tarefa": "Publicação do painel executivo com gestão mensal de execução",
+      "responsavel": "Anderson Pinheiro",
+      "status": "Concluído"
+    },
+    {
+      "mes": "Junho/2026",
+      "data": "Junho/2026",
+      "projeto": "Painel Executivo COI",
+      "tarefa": "Criação da estrutura de acompanhamento por projetos, incidentes, pendências e prazos",
+      "responsavel": "Anderson Pinheiro",
+      "status": "Concluído"
+    }
+  ],
   "competencias": [
     {
       "mes": "Maio/2026",
@@ -34,7 +133,7 @@
       "mes": "Junho/2026",
       "status": "Em execução",
       "atividades": [
-        "Publicação do Painel Executivo AURA v5.0",
+        "Publicação do Painel Executivo COI",
         "Registro da demanda concluída da Central DF/Gupshup",
         "Encerramento do incidente Gupshup 2FA após ativação do MFA com Microsoft Authenticator em 01/06/2026",
         "Evolução do projeto Transbordo URA → WhatsApp AURA",
