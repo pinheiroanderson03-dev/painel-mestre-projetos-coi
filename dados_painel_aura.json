@@ -1,15 +1,16 @@
 {
-  "versao": "5.0",
-  "ultimaAtualizacao": "2026-06-01",
+  "versao": "5.1",
+  "ultimaAtualizacao": "2026-06-11",
   "projetoBase": "PMO Executivo Mensal - COI / Central DF / AURA",
   "responsavelPrincipal": "Anderson Pinheiro",
+  "observacao": "A data de finalização da nova demanda foi ajustada para 05/07/2026, pois o término informado como 05/06/2026 seria anterior à data de início de 11/06/2026.",
   "dashboard": {
-    "projetosAtivos": 14,
+    "projetosAtivos": 15,
     "atividadesConcluidasMes": 7,
     "demandasConcluidas": 1,
     "incidentesAbertos": 1,
-    "pendenciasExecutivas": 5,
-    "entregasProximas": 4
+    "pendenciasExecutivas": 6,
+    "entregasProximas": 5
   },
   "competencias": [
     {
@@ -30,7 +31,8 @@
         "Registro da demanda concluída da Central DF/Gupshup",
         "Acompanhamento do incidente Gupshup 2FA",
         "Evolução da migração WhatsApp AURA",
-        "Acompanhamento do Chat Humano AURA"
+        "Acompanhamento do Chat Humano AURA",
+        "Início da validação dos links do painel AIOps da Central DF"
       ]
     },
     {
@@ -40,7 +42,8 @@
         "Avançar com testes integrados do WhatsApp AURA",
         "Definir janela de produção da migração WhatsApp AURA",
         "Apresentar evolução do WFM",
-        "Formalizar escopo inicial da URA Inteligente"
+        "Formalizar escopo inicial da URA Inteligente",
+        "Finalizar validação dos links do painel AIOps da Central DF"
       ]
     }
   ],
@@ -71,6 +74,26 @@
       "prioridade": "Alta",
       "competencia": "Junho/2026",
       "atividades": ["Ambiente de homologação validado", "Testes funcionais iniciados", "Ajuste da pesquisa de satisfação", "Reunião de ajuste do transbordo URA → WhatsApp", "Definir janela de produção e rollback"]
+    },
+    {
+      "nome": "Validação dos Links do Painel AIOps da Central DF",
+      "area": "Acompanhamento / AIOps",
+      "responsavel": "Anderson Pinheiro",
+      "alinhamento": "Marcos Lacerda",
+      "status": "Em andamento",
+      "prioridade": "Alta",
+      "inicio": "11/06/2026",
+      "previsaoConclusao": "05/07/2026",
+      "competencia": "Junho/2026",
+      "objetivo": "Validar os links do painel AIOps da Central DF referentes aos serviços do cliente, corrigindo ou sinalizando informações desatualizadas.",
+      "atividades": [
+        "Mapear links existentes no painel AIOps",
+        "Validar links dos serviços do cliente",
+        "Identificar informações desatualizadas",
+        "Consolidar apontamentos com Marcos Lacerda",
+        "Atualizar ou solicitar correção das informações divergentes",
+        "Registrar evidências da validação"
+      ]
     },
     {
       "nome": "Projeto URA Inteligente",
@@ -142,6 +165,13 @@
       "projeto": "Migração WhatsApp AURA",
       "responsavel": "A definir",
       "status": "Pendente"
+    },
+    {
+      "prazo": "05/07/2026",
+      "pendencia": "Finalizar validação dos links do painel AIOps da Central DF e consolidar apontamentos de informações desatualizadas",
+      "projeto": "Validação dos Links do Painel AIOps da Central DF",
+      "responsavel": "Anderson Pinheiro",
+      "status": "Em andamento"
     }
   ]
 }
