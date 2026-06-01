@@ -1,0 +1,147 @@
+{
+  "versao": "5.0",
+  "ultimaAtualizacao": "2026-06-01",
+  "projetoBase": "PMO Executivo Mensal - COI / Central DF / AURA",
+  "responsavelPrincipal": "Anderson Pinheiro",
+  "dashboard": {
+    "projetosAtivos": 14,
+    "atividadesConcluidasMes": 7,
+    "demandasConcluidas": 1,
+    "incidentesAbertos": 1,
+    "pendenciasExecutivas": 5,
+    "entregasProximas": 4
+  },
+  "competencias": [
+    {
+      "mes": "Maio/2026",
+      "status": "Realizado",
+      "atividades": [
+        "Estruturação inicial do painel executivo de projetos",
+        "Organização das iniciativas AURA, automação, IA e acompanhamentos",
+        "Evolução do relatório técnico AURA/Gupshup",
+        "Apoio em comunicações operacionais com fornecedor Gupshup"
+      ]
+    },
+    {
+      "mes": "Junho/2026",
+      "status": "Em execução",
+      "atividades": [
+        "Publicação do Painel Executivo AURA v5.0",
+        "Registro da demanda concluída da Central DF/Gupshup",
+        "Acompanhamento do incidente Gupshup 2FA",
+        "Evolução da migração WhatsApp AURA",
+        "Acompanhamento do Chat Humano AURA"
+      ]
+    },
+    {
+      "mes": "Julho/2026",
+      "status": "Planejado",
+      "atividades": [
+        "Avançar com testes integrados do WhatsApp AURA",
+        "Definir janela de produção da migração WhatsApp AURA",
+        "Apresentar evolução do WFM",
+        "Formalizar escopo inicial da URA Inteligente"
+      ]
+    }
+  ],
+  "projetos": [
+    {
+      "nome": "Transbordo URA → WhatsApp AURA",
+      "area": "Produtos AURA",
+      "responsavel": "Lucas",
+      "status": "Em planejamento",
+      "prioridade": "Alta",
+      "competencia": "Junho/2026",
+      "atividades": ["Agendar reunião com Lucas", "Mapear fluxo atual", "Validar fluxo futuro na AURA"]
+    },
+    {
+      "nome": "Chat Humano AURA",
+      "area": "Produtos AURA",
+      "responsavel": "A definir / Lucas",
+      "status": "Em validação",
+      "prioridade": "Alta",
+      "competencia": "Junho/2026",
+      "atividades": ["Validar versão atual", "Confirmar previsão de disponibilidade", "Avaliar experiência do atendente e cidadão"]
+    },
+    {
+      "nome": "Migração WhatsApp para AURA",
+      "area": "Produtos AURA",
+      "responsavel": "Equipe Bruno / Tactium / Equipe IA CIT",
+      "status": "Em homologação",
+      "prioridade": "Alta",
+      "competencia": "Junho/2026",
+      "atividades": ["Ambiente de homologação validado", "Testes funcionais iniciados", "Ajuste da pesquisa de satisfação", "Reunião de ajuste do transbordo URA → WhatsApp", "Definir janela de produção e rollback"]
+    },
+    {
+      "nome": "Projeto URA Inteligente",
+      "area": "Projetos Estratégicos",
+      "responsavel": "Jerson e Vilard",
+      "status": "Em planejamento",
+      "prioridade": "Alta",
+      "competencia": "Julho/2026",
+      "atividades": ["Formalizar abertura do projeto", "Definir escopo inicial", "Avaliar POC"]
+    },
+    {
+      "nome": "Claude — Relatórios da Central de Atendimento",
+      "area": "Automação e IA",
+      "responsavel": "Anderson / a definir",
+      "status": "Em andamento",
+      "prioridade": "Média",
+      "competencia": "Junho/2026",
+      "atividades": ["Definir padrão de relatório", "Validar dados de entrada", "Criar agente de relatório"]
+    },
+    {
+      "nome": "Campanhas — Tratamento de Mailing via IA",
+      "area": "Automação e IA",
+      "responsavel": "Anderson / a definir",
+      "status": "Em andamento",
+      "prioridade": "Média",
+      "competencia": "Junho/2026",
+      "atividades": ["Mapear bases de mailing", "Definir regras de higienização", "Criar fluxo de validação"]
+    }
+  ],
+  "demandasConcluidas": [
+    {
+      "titulo": "Central DF – Atualização de Razão Social e CNPJ da Conta Gupshup",
+      "projeto": "Central DF",
+      "categoria": "Gestão Contratual",
+      "responsavel": "Anderson Pinheiro",
+      "periodo": "26/05/2026 a 01/06/2026",
+      "status": "Concluído",
+      "resultado": "Atualização cadastral realizada com sucesso junto à Gupshup, adequando a conta à nova estrutura contratual da Central IT Tecnologia da Informação S/A."
+    }
+  ],
+  "incidentes": [
+    {
+      "titulo": "Gupshup – Falha no Recebimento de Código 2FA",
+      "sistema": "Gupshup",
+      "responsavel": "Anderson Pinheiro",
+      "abertura": "01/06/2026",
+      "prioridade": "Alta",
+      "status": "Em verificação"
+    }
+  ],
+  "pendencias": [
+    {
+      "prazo": "03/06/2026",
+      "pendencia": "Ajuste da pesquisa de satisfação",
+      "projeto": "WhatsApp AURA",
+      "responsavel": "Equipe Bruno",
+      "status": "Pendente"
+    },
+    {
+      "prazo": "04/06/2026",
+      "pendencia": "Reunião de ajuste do transbordo URA → WhatsApp",
+      "projeto": "WhatsApp AURA",
+      "responsavel": "Tactium / Equipe IA CIT",
+      "status": "Pendente"
+    },
+    {
+      "prazo": "A definir",
+      "pendencia": "Definir janela de virada para produção",
+      "projeto": "Migração WhatsApp AURA",
+      "responsavel": "A definir",
+      "status": "Pendente"
+    }
+  ]
+}
