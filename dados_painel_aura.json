@@ -1,17 +1,17 @@
 {
-  "versao": "6.3",
+  "versao": "6.4",
   "ultimaAtualizacao": "2026-06-01",
   "projetoBase": "PMO Executivo Mensal - COI / Central DF / AURA",
   "responsavelPrincipal": "Anderson Pinheiro",
-  "observacao": "Incidente Gupshup 2FA encerrado em 01/06/2026 após ativação do MFA com Microsoft Authenticator e validação de acesso.",
+  "observacao": "Projeto Migração WhatsApp para AURA removido por duplicidade. A iniciativa foi consolidada no projeto Transbordo URA → WhatsApp AURA.",
   "dashboard": {
-    "projetosAtivos": 15,
+    "projetosAtivos": 14,
     "atividadesConcluidasMes": 12,
     "demandasConcluidas": 1,
     "incidentesAbertos": 0,
     "incidentesResolvidos": 1,
-    "pendenciasExecutivas": 7,
-    "entregasProximas": 7
+    "pendenciasExecutivas": 6,
+    "entregasProximas": 6
   },
   "competencias": [
     {
@@ -35,18 +35,18 @@
         "Publicação do Painel Executivo AURA v5.0",
         "Registro da demanda concluída da Central DF/Gupshup",
         "Encerramento do incidente Gupshup 2FA após ativação do MFA com Microsoft Authenticator em 01/06/2026",
-        "Evolução da migração WhatsApp AURA",
+        "Evolução do projeto Transbordo URA → WhatsApp AURA",
         "Acompanhamento do Chat Humano AURA",
         "Início da validação dos links do painel AIOps da Central DF",
-        "Atualização do projeto Transbordo URA → WhatsApp AURA para status Em andamento"
+        "Consolidação do projeto Migração WhatsApp para AURA dentro do projeto Transbordo URA → WhatsApp AURA"
       ]
     },
     {
       "mes": "Julho/2026",
       "status": "Planejado",
       "atividades": [
-        "Avançar com testes integrados do WhatsApp AURA",
-        "Definir janela de produção da migração WhatsApp AURA",
+        "Avançar com testes integrados do Transbordo URA → WhatsApp AURA",
+        "Definir janela de produção do Transbordo URA → WhatsApp AURA",
         "Apresentar evolução do WFM",
         "Formalizar escopo inicial da URA Inteligente",
         "Finalizar validação dos links do painel AIOps da Central DF"
@@ -65,14 +65,17 @@
       "previsaoConclusao": "A definir",
       "competencia": "Junho/2026",
       "progresso": "57%",
-      "objetivo": "Evoluir o fluxo de transbordo da URA para atendimento via WhatsApp integrado à plataforma AURA.",
+      "objetivo": "Evoluir o fluxo de transbordo da URA para atendimento via WhatsApp integrado à plataforma AURA, consolidando também as ações antes registradas como Migração WhatsApp para AURA.",
       "atividades": [
         "✅ Reunião de alinhamento com Lucas — concluída em Maio/2026",
         "✅ Mapeamento do fluxo atual — concluído em Maio/2026",
         "✅ Criação do ambiente de homologação do WhatsApp com o número (61) 99974-5325 — concluído",
         "✅ Teste do ambiente de homologação — concluído em 22/05/2026",
+        "✅ Ambiente de homologação validado",
+        "✅ Testes funcionais iniciados",
         "⏳ Levantamento e publicação da pesquisa de satisfação no WhatsApp — pendente com Equipe Bruno, previsão 05/07/2026",
         "⏳ Transição do transbordo da URA com integração ao WhatsApp — pendente de reunião técnica com a Tactium",
+        "⏳ Definição da janela de produção e plano de rollback — pendente",
         "⏳ Validação do fluxo futuro na AURA — pendente"
       ]
     },
@@ -87,21 +90,6 @@
         "Validar versão atual",
         "Confirmar previsão de disponibilidade",
         "Avaliar experiência do atendente e cidadão"
-      ]
-    },
-    {
-      "nome": "Migração WhatsApp para AURA",
-      "area": "Produtos AURA",
-      "responsavel": "Equipe Bruno / Tactium / Equipe IA CIT",
-      "status": "Em homologação",
-      "prioridade": "Alta",
-      "competencia": "Junho/2026",
-      "atividades": [
-        "Ambiente de homologação validado",
-        "Testes funcionais iniciados",
-        "Ajuste da pesquisa de satisfação",
-        "Reunião de ajuste do transbordo URA → WhatsApp",
-        "Definir janela de produção e rollback"
       ]
     },
     {
@@ -201,18 +189,18 @@
       "status": "Pendente"
     },
     {
+      "data": "A definir",
+      "projeto": "Transbordo URA → WhatsApp AURA",
+      "acao": "Definir janela de produção e plano de rollback",
+      "responsavel": "A definir",
+      "status": "Pendente"
+    },
+    {
       "data": "05/07/2026",
       "projeto": "Validação dos Links do Painel AIOps da Central DF",
       "acao": "Finalizar validação dos links do painel AIOps e consolidar apontamentos de informações desatualizadas",
       "responsavel": "Anderson Pinheiro",
       "status": "Em andamento"
-    },
-    {
-      "data": "A definir",
-      "projeto": "Migração WhatsApp para AURA",
-      "acao": "Definir janela de virada para produção e plano de rollback",
-      "responsavel": "A definir",
-      "status": "Pendente"
     }
   ],
   "demandasConcluidas": [
@@ -257,8 +245,8 @@
     },
     {
       "prazo": "A definir",
-      "pendencia": "Definir janela de virada para produção",
-      "projeto": "Migração WhatsApp AURA",
+      "pendencia": "Definir janela de produção e plano de rollback",
+      "projeto": "Transbordo URA → WhatsApp AURA",
       "responsavel": "A definir",
       "status": "Pendente"
     },
