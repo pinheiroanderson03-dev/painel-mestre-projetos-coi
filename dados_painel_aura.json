@@ -1,17 +1,17 @@
 {
-  "versao": "6.4",
-  "ultimaAtualizacao": "2026-06-01",
+  "versao": "6.5",
+  "ultimaAtualizacao": "2026-06-11",
   "projetoBase": "PMO Executivo Mensal - COI / Central DF / AURA",
   "responsavelPrincipal": "Anderson Pinheiro",
-  "observacao": "Projeto Migração WhatsApp para AURA removido por duplicidade. A iniciativa foi consolidada no projeto Transbordo URA → WhatsApp AURA.",
+  "observacao": "Projeto Chat Humano AURA atualizado para Em andamento, com registro das atividades concluídas em Maio/2026 e pendência de priorização do Portal de Atendimento Humano com prazo previsto para 05/06/2026.",
   "dashboard": {
     "projetosAtivos": 14,
-    "atividadesConcluidasMes": 12,
+    "atividadesConcluidasMes": 14,
     "demandasConcluidas": 1,
     "incidentesAbertos": 0,
     "incidentesResolvidos": 1,
-    "pendenciasExecutivas": 6,
-    "entregasProximas": 6
+    "pendenciasExecutivas": 7,
+    "entregasProximas": 7
   },
   "competencias": [
     {
@@ -25,7 +25,9 @@
         "Agendamento e realização de reunião de alinhamento com Lucas para o projeto Transbordo URA → WhatsApp AURA",
         "Mapeamento do fluxo atual do transbordo URA → WhatsApp",
         "Criação do ambiente de homologação do WhatsApp utilizando o número (61) 99974-5325",
-        "Realização dos testes iniciais do ambiente de homologação em 22/05/2026"
+        "Realização dos testes iniciais do ambiente de homologação em 22/05/2026",
+        "Reunião de alinhamento com Lucas para o projeto Chat Humano AURA",
+        "Mapeamento do fluxo atual do Chat Humano AURA"
       ]
     },
     {
@@ -36,7 +38,7 @@
         "Registro da demanda concluída da Central DF/Gupshup",
         "Encerramento do incidente Gupshup 2FA após ativação do MFA com Microsoft Authenticator em 01/06/2026",
         "Evolução do projeto Transbordo URA → WhatsApp AURA",
-        "Acompanhamento do Chat Humano AURA",
+        "Atualização do Chat Humano AURA para status Em andamento",
         "Início da validação dos links do painel AIOps da Central DF",
         "Consolidação do projeto Migração WhatsApp para AURA dentro do projeto Transbordo URA → WhatsApp AURA"
       ]
@@ -81,15 +83,22 @@
     },
     {
       "nome": "Chat Humano AURA",
-      "area": "Produtos AURA",
-      "responsavel": "A definir / Lucas",
-      "status": "Em validação",
+      "area": "Produtos AURA / Portal de Atendimento Humano",
+      "responsavel": "Nakakura e Lucas",
+      "status": "Em andamento",
       "prioridade": "Alta",
+      "inicio": "Maio/2026",
+      "ultimaAtualizacao": "11/06/2026",
+      "previsaoConclusao": "05/06/2026",
       "competencia": "Junho/2026",
+      "objetivo": "Evoluir o Portal de Atendimento Humano da AURA, priorizando os pontos de melhoria da ferramenta encaminhados por Cláudio.",
       "atividades": [
-        "Validar versão atual",
-        "Confirmar previsão de disponibilidade",
-        "Avaliar experiência do atendente e cidadão"
+        "✅ Reunião de alinhamento com Lucas — concluída em Maio/2026",
+        "✅ Mapeamento do fluxo atual — concluído em Maio/2026",
+        "⏳ Realizar reunião de priorização dos pontos de melhoria da ferramenta enviados por Cláudio — responsável: Nakakura e Lucas, prazo previsto 05/06/2026",
+        "⏳ Consolidar os pontos de melhoria enviados por Cláudio",
+        "⏳ Definir backlog de evolução do Portal de Atendimento Humano",
+        "⏳ Planejar implementação das melhorias aprovadas"
       ]
     },
     {
@@ -175,6 +184,13 @@
       "status": "Concluído"
     },
     {
+      "data": "05/06/2026",
+      "projeto": "Chat Humano AURA",
+      "acao": "Realizar reunião de priorização dos pontos de melhoria do Portal de Atendimento Humano enviados por Cláudio",
+      "responsavel": "Nakakura e Lucas",
+      "status": "Pendente"
+    },
+    {
       "data": "05/07/2026",
       "projeto": "Transbordo URA → WhatsApp AURA",
       "acao": "Levantamento e publicação da pesquisa de satisfação no WhatsApp",
@@ -229,6 +245,13 @@
     }
   ],
   "pendencias": [
+    {
+      "prazo": "05/06/2026",
+      "pendencia": "Realizar reunião de priorização dos pontos de melhoria do Portal de Atendimento Humano enviados por Cláudio",
+      "projeto": "Chat Humano AURA",
+      "responsavel": "Nakakura e Lucas",
+      "status": "Pendente"
+    },
     {
       "prazo": "05/07/2026",
       "pendencia": "Levantamento e publicação da pesquisa de satisfação no WhatsApp",
