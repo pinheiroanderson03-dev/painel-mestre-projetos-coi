@@ -1,14 +1,15 @@
 {
-  "versao": "6.2",
-  "ultimaAtualizacao": "2026-06-11",
+  "versao": "6.3",
+  "ultimaAtualizacao": "2026-06-01",
   "projetoBase": "PMO Executivo Mensal - COI / Central DF / AURA",
   "responsavelPrincipal": "Anderson Pinheiro",
-  "observacao": "Painel atualizado com prazos, datas críticas e evolução do projeto Transbordo URA → WhatsApp AURA.",
+  "observacao": "Incidente Gupshup 2FA encerrado em 01/06/2026 após ativação do MFA com Microsoft Authenticator e validação de acesso.",
   "dashboard": {
     "projetosAtivos": 15,
-    "atividadesConcluidasMes": 11,
+    "atividadesConcluidasMes": 12,
     "demandasConcluidas": 1,
-    "incidentesAbertos": 1,
+    "incidentesAbertos": 0,
+    "incidentesResolvidos": 1,
     "pendenciasExecutivas": 7,
     "entregasProximas": 7
   },
@@ -33,7 +34,7 @@
       "atividades": [
         "Publicação do Painel Executivo AURA v5.0",
         "Registro da demanda concluída da Central DF/Gupshup",
-        "Acompanhamento do incidente Gupshup 2FA",
+        "Encerramento do incidente Gupshup 2FA após ativação do MFA com Microsoft Authenticator em 01/06/2026",
         "Evolução da migração WhatsApp AURA",
         "Acompanhamento do Chat Humano AURA",
         "Início da validação dos links do painel AIOps da Central DF",
@@ -82,7 +83,11 @@
       "status": "Em validação",
       "prioridade": "Alta",
       "competencia": "Junho/2026",
-      "atividades": ["Validar versão atual", "Confirmar previsão de disponibilidade", "Avaliar experiência do atendente e cidadão"]
+      "atividades": [
+        "Validar versão atual",
+        "Confirmar previsão de disponibilidade",
+        "Avaliar experiência do atendente e cidadão"
+      ]
     },
     {
       "nome": "Migração WhatsApp para AURA",
@@ -91,7 +96,13 @@
       "status": "Em homologação",
       "prioridade": "Alta",
       "competencia": "Junho/2026",
-      "atividades": ["Ambiente de homologação validado", "Testes funcionais iniciados", "Ajuste da pesquisa de satisfação", "Reunião de ajuste do transbordo URA → WhatsApp", "Definir janela de produção e rollback"]
+      "atividades": [
+        "Ambiente de homologação validado",
+        "Testes funcionais iniciados",
+        "Ajuste da pesquisa de satisfação",
+        "Reunião de ajuste do transbordo URA → WhatsApp",
+        "Definir janela de produção e rollback"
+      ]
     },
     {
       "nome": "Validação dos Links do Painel AIOps da Central DF",
@@ -120,7 +131,11 @@
       "status": "Em planejamento",
       "prioridade": "Alta",
       "competencia": "Julho/2026",
-      "atividades": ["Formalizar abertura do projeto", "Definir escopo inicial", "Avaliar POC"]
+      "atividades": [
+        "Formalizar abertura do projeto",
+        "Definir escopo inicial",
+        "Avaliar POC"
+      ]
     },
     {
       "nome": "Claude — Relatórios da Central de Atendimento",
@@ -129,7 +144,11 @@
       "status": "Em andamento",
       "prioridade": "Média",
       "competencia": "Junho/2026",
-      "atividades": ["Definir padrão de relatório", "Validar dados de entrada", "Criar agente de relatório"]
+      "atividades": [
+        "Definir padrão de relatório",
+        "Validar dados de entrada",
+        "Criar agente de relatório"
+      ]
     },
     {
       "nome": "Campanhas — Tratamento de Mailing via IA",
@@ -138,10 +157,21 @@
       "status": "Em andamento",
       "prioridade": "Média",
       "competencia": "Junho/2026",
-      "atividades": ["Mapear bases de mailing", "Definir regras de higienização", "Criar fluxo de validação"]
+      "atividades": [
+        "Mapear bases de mailing",
+        "Definir regras de higienização",
+        "Criar fluxo de validação"
+      ]
     }
   ],
   "prazos": [
+    {
+      "data": "01/06/2026",
+      "projeto": "Gupshup – Falha no Recebimento de Código 2FA",
+      "acao": "Ativação do MFA com Microsoft Authenticator e validação de acesso à plataforma",
+      "responsavel": "Anderson Pinheiro",
+      "status": "Concluído"
+    },
     {
       "data": "22/05/2026",
       "projeto": "Transbordo URA → WhatsApp AURA",
@@ -199,11 +229,15 @@
   "incidentes": [
     {
       "titulo": "Gupshup – Falha no Recebimento de Código 2FA",
-      "sistema": "Gupshup",
+      "sistema": "Gupshup WhatsApp",
       "responsavel": "Anderson Pinheiro",
       "abertura": "01/06/2026",
+      "encerramento": "01/06/2026",
       "prioridade": "Alta",
-      "status": "Em verificação"
+      "status": "Concluído",
+      "causa": "Exigência de autenticação multifator (MFA) pela Gupshup como nova política de segurança para acesso à plataforma.",
+      "acaoExecutada": "Ativação do MFA utilizando Microsoft Authenticator, validação de acesso à plataforma, cadastro inicial dos dispositivos autorizados, teste de acesso com Felipe Cardador e comunicação aos responsáveis pela plataforma.",
+      "resultado": "Incidente resolvido no mesmo dia da abertura. Acesso restabelecido com sucesso, MFA configurado e processo de governança de acessos definido."
     }
   ],
   "pendencias": [
