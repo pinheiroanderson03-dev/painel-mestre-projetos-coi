@@ -1,13 +1,13 @@
 {
-  "versao": "6.6",
+  "versao": "6.7",
   "ultimaAtualizacao": "2026-06-11",
   "projetoBase": "PMO Executivo Mensal - COI / Central DF / AURA",
   "responsavelPrincipal": "Anderson Pinheiro",
-  "observacao": "Painel renomeado para Painel Executivo COI e estruturado com seção de Tarefas Concluídas para evidenciar atividades executadas e trabalho realizado.",
+  "observacao": "Ajustada a nomenclatura do projeto Central DF de Transbordo URA → WhatsApp AURA, incluída reunião de apresentação da ferramenta AURA de disparos e removidos logs internos da visão executiva mensal.",
   "dashboard": {
     "projetosAtivos": 14,
-    "atividadesConcluidasMes": 14,
-    "tarefasConcluidas": 12,
+    "atividadesConcluidasMes": 13,
+    "tarefasConcluidas": 11,
     "demandasConcluidas": 1,
     "incidentesAbertos": 0,
     "incidentesResolvidos": 1,
@@ -15,113 +15,24 @@
     "entregasProximas": 7
   },
   "tarefasConcluidas": [
-    {
-      "mes": "Maio/2026",
-      "data": "Maio/2026",
-      "projeto": "Transbordo URA → WhatsApp AURA",
-      "tarefa": "Reunião de alinhamento com Lucas",
-      "responsavel": "Lucas / Equipe COI",
-      "status": "Concluído"
-    },
-    {
-      "mes": "Maio/2026",
-      "data": "Maio/2026",
-      "projeto": "Transbordo URA → WhatsApp AURA",
-      "tarefa": "Mapeamento do fluxo atual",
-      "responsavel": "Lucas / Equipe COI",
-      "status": "Concluído"
-    },
-    {
-      "mes": "Maio/2026",
-      "data": "Maio/2026",
-      "projeto": "Transbordo URA → WhatsApp AURA",
-      "tarefa": "Criação do ambiente de homologação do WhatsApp com o número (61) 99974-5325",
-      "responsavel": "Equipe técnica",
-      "status": "Concluído"
-    },
-    {
-      "mes": "Maio/2026",
-      "data": "22/05/2026",
-      "projeto": "Transbordo URA → WhatsApp AURA",
-      "tarefa": "Teste do ambiente de homologação",
-      "responsavel": "Equipe técnica",
-      "status": "Concluído"
-    },
-    {
-      "mes": "Maio/2026",
-      "data": "Maio/2026",
-      "projeto": "Transbordo URA → WhatsApp AURA",
-      "tarefa": "Validação do ambiente de homologação",
-      "responsavel": "Lucas / Equipe técnica",
-      "status": "Concluído"
-    },
-    {
-      "mes": "Maio/2026",
-      "data": "Maio/2026",
-      "projeto": "Transbordo URA → WhatsApp AURA",
-      "tarefa": "Início dos testes funcionais",
-      "responsavel": "Lucas / Equipe técnica",
-      "status": "Concluído"
-    },
-    {
-      "mes": "Maio/2026",
-      "data": "Maio/2026",
-      "projeto": "Chat Humano AURA",
-      "tarefa": "Reunião de alinhamento com Lucas",
-      "responsavel": "Lucas / Equipe COI",
-      "status": "Concluído"
-    },
-    {
-      "mes": "Maio/2026",
-      "data": "Maio/2026",
-      "projeto": "Chat Humano AURA",
-      "tarefa": "Mapeamento do fluxo atual",
-      "responsavel": "Lucas / Equipe COI",
-      "status": "Concluído"
-    },
-    {
-      "mes": "Junho/2026",
-      "data": "01/06/2026",
-      "projeto": "Gupshup – Falha no Recebimento de Código 2FA",
-      "tarefa": "Ativação do MFA com Microsoft Authenticator e validação de acesso à plataforma",
-      "responsavel": "Anderson Pinheiro",
-      "status": "Concluído"
-    },
-    {
-      "mes": "Junho/2026",
-      "data": "01/06/2026",
-      "projeto": "Central DF – Conta Gupshup",
-      "tarefa": "Conclusão da atualização de razão social e CNPJ da conta Gupshup",
-      "responsavel": "Anderson Pinheiro",
-      "status": "Concluído"
-    },
-    {
-      "mes": "Junho/2026",
-      "data": "Junho/2026",
-      "projeto": "Painel Executivo COI",
-      "tarefa": "Publicação do painel executivo com gestão mensal de execução",
-      "responsavel": "Anderson Pinheiro",
-      "status": "Concluído"
-    },
-    {
-      "mes": "Junho/2026",
-      "data": "Junho/2026",
-      "projeto": "Painel Executivo COI",
-      "tarefa": "Criação da estrutura de acompanhamento por projetos, incidentes, pendências e prazos",
-      "responsavel": "Anderson Pinheiro",
-      "status": "Concluído"
-    }
+    {"mes":"Maio/2026","data":"Maio/2026","projeto":"CENTRAL DF - Transbordo URA → WhatsApp AURA → migração WhatsApp para a AURA","tarefa":"Reunião de alinhamento com Lucas","responsavel":"Lucas / Equipe COI","status":"Concluído"},
+    {"mes":"Maio/2026","data":"Maio/2026","projeto":"CENTRAL DF - Transbordo URA → WhatsApp AURA → migração WhatsApp para a AURA","tarefa":"Mapeamento do fluxo atual","responsavel":"Lucas / Equipe COI","status":"Concluído"},
+    {"mes":"Maio/2026","data":"Maio/2026","projeto":"CENTRAL DF - Transbordo URA → WhatsApp AURA → migração WhatsApp para a AURA","tarefa":"Criação do ambiente de homologação do WhatsApp com o número (61) 99974-5325","responsavel":"Equipe técnica","status":"Concluído"},
+    {"mes":"Maio/2026","data":"22/05/2026","projeto":"CENTRAL DF - Transbordo URA → WhatsApp AURA → migração WhatsApp para a AURA","tarefa":"Teste do ambiente de homologação","responsavel":"Equipe técnica","status":"Concluído"},
+    {"mes":"Maio/2026","data":"Maio/2026","projeto":"CENTRAL DF - Transbordo URA → WhatsApp AURA → migração WhatsApp para a AURA","tarefa":"Validação do ambiente de homologação","responsavel":"Lucas / Equipe técnica","status":"Concluído"},
+    {"mes":"Maio/2026","data":"Maio/2026","projeto":"CENTRAL DF - Transbordo URA → WhatsApp AURA → migração WhatsApp para a AURA","tarefa":"Início dos testes funcionais","responsavel":"Lucas / Equipe técnica","status":"Concluído"},
+    {"mes":"Junho/2026","data":"03/06/2026 10:30","projeto":"CENTRAL DF - Transbordo URA → WhatsApp AURA → migração WhatsApp para a AURA","tarefa":"Reunião Apresentação da Ferramenta AURA de disparos","responsavel":"Equipe COI / AURA","status":"Concluído"},
+    {"mes":"Maio/2026","data":"Maio/2026","projeto":"Chat Humano AURA","tarefa":"Reunião de alinhamento com Lucas","responsavel":"Lucas / Equipe COI","status":"Concluído"},
+    {"mes":"Maio/2026","data":"Maio/2026","projeto":"Chat Humano AURA","tarefa":"Mapeamento do fluxo atual","responsavel":"Lucas / Equipe COI","status":"Concluído"},
+    {"mes":"Junho/2026","data":"01/06/2026","projeto":"Gupshup – Falha no Recebimento de Código 2FA","tarefa":"Ativação do MFA com Microsoft Authenticator e validação de acesso à plataforma","responsavel":"Anderson Pinheiro","status":"Concluído"},
+    {"mes":"Junho/2026","data":"01/06/2026","projeto":"Central DF – Conta Gupshup","tarefa":"Conclusão da atualização de razão social e CNPJ da conta Gupshup","responsavel":"Anderson Pinheiro","status":"Concluído"}
   ],
   "competencias": [
     {
       "mes": "Maio/2026",
       "status": "Realizado",
       "atividades": [
-        "Estruturação inicial do painel executivo de projetos",
-        "Organização das iniciativas AURA, automação, IA e acompanhamentos",
-        "Evolução do relatório técnico AURA/Gupshup",
-        "Apoio em comunicações operacionais com fornecedor Gupshup",
-        "Agendamento e realização de reunião de alinhamento com Lucas para o projeto Transbordo URA → WhatsApp AURA",
+        "Agendamento e realização de reunião de alinhamento com Lucas para o projeto CENTRAL DF - Transbordo URA → WhatsApp AURA → migração WhatsApp para a AURA",
         "Mapeamento do fluxo atual do transbordo URA → WhatsApp",
         "Criação do ambiente de homologação do WhatsApp utilizando o número (61) 99974-5325",
         "Realização dos testes iniciais do ambiente de homologação em 22/05/2026",
@@ -133,21 +44,20 @@
       "mes": "Junho/2026",
       "status": "Em execução",
       "atividades": [
-        "Publicação do Painel Executivo COI",
+        "Reunião Apresentação da Ferramenta AURA de disparos realizada em 03/06/2026 às 10h30",
         "Registro da demanda concluída da Central DF/Gupshup",
         "Encerramento do incidente Gupshup 2FA após ativação do MFA com Microsoft Authenticator em 01/06/2026",
-        "Evolução do projeto Transbordo URA → WhatsApp AURA",
+        "Evolução do projeto CENTRAL DF - Transbordo URA → WhatsApp AURA → migração WhatsApp para a AURA",
         "Atualização do Chat Humano AURA para status Em andamento",
-        "Início da validação dos links do painel AIOps da Central DF",
-        "Consolidação do projeto Migração WhatsApp para AURA dentro do projeto Transbordo URA → WhatsApp AURA"
+        "Início da validação dos links do painel AIOps da Central DF"
       ]
     },
     {
       "mes": "Julho/2026",
       "status": "Planejado",
       "atividades": [
-        "Avançar com testes integrados do Transbordo URA → WhatsApp AURA",
-        "Definir janela de produção do Transbordo URA → WhatsApp AURA",
+        "Avançar com testes integrados do CENTRAL DF - Transbordo URA → WhatsApp AURA → migração WhatsApp para a AURA",
+        "Definir janela de produção do CENTRAL DF - Transbordo URA → WhatsApp AURA → migração WhatsApp para a AURA",
         "Apresentar evolução do WFM",
         "Formalizar escopo inicial da URA Inteligente",
         "Finalizar validação dos links do painel AIOps da Central DF"
@@ -156,8 +66,8 @@
   ],
   "projetos": [
     {
-      "nome": "Transbordo URA → WhatsApp AURA",
-      "area": "Produtos AURA",
+      "nome": "CENTRAL DF - Transbordo URA → WhatsApp AURA → migração WhatsApp para a AURA",
+      "area": "Produtos AURA / Central DF",
       "responsavel": "Lucas",
       "status": "Em andamento",
       "prioridade": "Alta",
@@ -166,7 +76,7 @@
       "previsaoConclusao": "A definir",
       "competencia": "Junho/2026",
       "progresso": "57%",
-      "objetivo": "Evoluir o fluxo de transbordo da URA para atendimento via WhatsApp integrado à plataforma AURA, consolidando também as ações antes registradas como Migração WhatsApp para AURA.",
+      "objetivo": "Evoluir o fluxo de transbordo da URA para atendimento via WhatsApp integrado à plataforma AURA, contemplando a migração do WhatsApp para a AURA no contexto do projeto Central DF.",
       "atividades": [
         "✅ Reunião de alinhamento com Lucas — concluída em Maio/2026",
         "✅ Mapeamento do fluxo atual — concluído em Maio/2026",
@@ -174,6 +84,7 @@
         "✅ Teste do ambiente de homologação — concluído em 22/05/2026",
         "✅ Ambiente de homologação validado",
         "✅ Testes funcionais iniciados",
+        "✅ Reunião Apresentação da Ferramenta AURA de disparos — realizada em 03/06/2026 às 10h30",
         "⏳ Levantamento e publicação da pesquisa de satisfação no WhatsApp — pendente com Equipe Bruno, previsão 05/07/2026",
         "⏳ Transição do transbordo da URA com integração ao WhatsApp — pendente de reunião técnica com a Tactium",
         "⏳ Definição da janela de produção e plano de rollback — pendente",
@@ -211,173 +122,30 @@
       "previsaoConclusao": "05/07/2026",
       "competencia": "Junho/2026",
       "objetivo": "Validar os links do painel AIOps da Central DF referentes aos serviços do cliente, corrigindo ou sinalizando informações desatualizadas.",
-      "atividades": [
-        "Mapear links existentes no painel AIOps",
-        "Validar links dos serviços do cliente",
-        "Identificar informações desatualizadas",
-        "Consolidar apontamentos com Marcos Lacerda",
-        "Atualizar ou solicitar correção das informações divergentes",
-        "Registrar evidências da validação"
-      ]
+      "atividades": ["Mapear links existentes no painel AIOps","Validar links dos serviços do cliente","Identificar informações desatualizadas","Consolidar apontamentos com Marcos Lacerda","Atualizar ou solicitar correção das informações divergentes","Registrar evidências da validação"]
     },
-    {
-      "nome": "Projeto URA Inteligente",
-      "area": "Projetos Estratégicos",
-      "responsavel": "Jerson e Vilard",
-      "status": "Em planejamento",
-      "prioridade": "Alta",
-      "competencia": "Julho/2026",
-      "atividades": [
-        "Formalizar abertura do projeto",
-        "Definir escopo inicial",
-        "Avaliar POC"
-      ]
-    },
-    {
-      "nome": "Claude — Relatórios da Central de Atendimento",
-      "area": "Automação e IA",
-      "responsavel": "Anderson / a definir",
-      "status": "Em andamento",
-      "prioridade": "Média",
-      "competencia": "Junho/2026",
-      "atividades": [
-        "Definir padrão de relatório",
-        "Validar dados de entrada",
-        "Criar agente de relatório"
-      ]
-    },
-    {
-      "nome": "Campanhas — Tratamento de Mailing via IA",
-      "area": "Automação e IA",
-      "responsavel": "Anderson / a definir",
-      "status": "Em andamento",
-      "prioridade": "Média",
-      "competencia": "Junho/2026",
-      "atividades": [
-        "Mapear bases de mailing",
-        "Definir regras de higienização",
-        "Criar fluxo de validação"
-      ]
-    }
+    {"nome":"Projeto URA Inteligente","area":"Projetos Estratégicos","responsavel":"Jerson e Vilard","status":"Em planejamento","prioridade":"Alta","competencia":"Julho/2026","atividades":["Formalizar abertura do projeto","Definir escopo inicial","Avaliar POC"]},
+    {"nome":"Claude — Relatórios da Central de Atendimento","area":"Automação e IA","responsavel":"Anderson / a definir","status":"Em andamento","prioridade":"Média","competencia":"Junho/2026","atividades":["Definir padrão de relatório","Validar dados de entrada","Criar agente de relatório"]},
+    {"nome":"Campanhas — Tratamento de Mailing via IA","area":"Automação e IA","responsavel":"Anderson / a definir","status":"Em andamento","prioridade":"Média","competencia":"Junho/2026","atividades":["Mapear bases de mailing","Definir regras de higienização","Criar fluxo de validação"]}
   ],
   "prazos": [
-    {
-      "data": "01/06/2026",
-      "projeto": "Gupshup – Falha no Recebimento de Código 2FA",
-      "acao": "Ativação do MFA com Microsoft Authenticator e validação de acesso à plataforma",
-      "responsavel": "Anderson Pinheiro",
-      "status": "Concluído"
-    },
-    {
-      "data": "22/05/2026",
-      "projeto": "Transbordo URA → WhatsApp AURA",
-      "acao": "Teste do ambiente de homologação do WhatsApp",
-      "responsavel": "Lucas / Equipe técnica",
-      "status": "Concluído"
-    },
-    {
-      "data": "Maio/2026",
-      "projeto": "Transbordo URA → WhatsApp AURA",
-      "acao": "Reunião com Lucas, mapeamento do fluxo atual e criação do ambiente de homologação com o número (61) 99974-5325",
-      "responsavel": "Lucas",
-      "status": "Concluído"
-    },
-    {
-      "data": "05/06/2026",
-      "projeto": "Chat Humano AURA",
-      "acao": "Realizar reunião de priorização dos pontos de melhoria do Portal de Atendimento Humano enviados por Cláudio",
-      "responsavel": "Nakakura e Lucas",
-      "status": "Pendente"
-    },
-    {
-      "data": "05/07/2026",
-      "projeto": "Transbordo URA → WhatsApp AURA",
-      "acao": "Levantamento e publicação da pesquisa de satisfação no WhatsApp",
-      "responsavel": "Equipe Bruno",
-      "status": "Pendente"
-    },
-    {
-      "data": "A definir",
-      "projeto": "Transbordo URA → WhatsApp AURA",
-      "acao": "Reunião técnica com a Tactium para transição do transbordo da URA com integração ao WhatsApp",
-      "responsavel": "Tactium / Equipe IA CIT",
-      "status": "Pendente"
-    },
-    {
-      "data": "A definir",
-      "projeto": "Transbordo URA → WhatsApp AURA",
-      "acao": "Definir janela de produção e plano de rollback",
-      "responsavel": "A definir",
-      "status": "Pendente"
-    },
-    {
-      "data": "05/07/2026",
-      "projeto": "Validação dos Links do Painel AIOps da Central DF",
-      "acao": "Finalizar validação dos links do painel AIOps e consolidar apontamentos de informações desatualizadas",
-      "responsavel": "Anderson Pinheiro",
-      "status": "Em andamento"
-    }
+    {"data":"01/06/2026","projeto":"Gupshup – Falha no Recebimento de Código 2FA","acao":"Ativação do MFA com Microsoft Authenticator e validação de acesso à plataforma","responsavel":"Anderson Pinheiro","status":"Concluído"},
+    {"data":"22/05/2026","projeto":"CENTRAL DF - Transbordo URA → WhatsApp AURA → migração WhatsApp para a AURA","acao":"Teste do ambiente de homologação do WhatsApp","responsavel":"Lucas / Equipe técnica","status":"Concluído"},
+    {"data":"03/06/2026 10:30","projeto":"CENTRAL DF - Transbordo URA → WhatsApp AURA → migração WhatsApp para a AURA","acao":"Reunião Apresentação da Ferramenta AURA de disparos","responsavel":"Equipe COI / AURA","status":"Concluído"},
+    {"data":"Maio/2026","projeto":"CENTRAL DF - Transbordo URA → WhatsApp AURA → migração WhatsApp para a AURA","acao":"Reunião com Lucas, mapeamento do fluxo atual e criação do ambiente de homologação com o número (61) 99974-5325","responsavel":"Lucas","status":"Concluído"},
+    {"data":"05/06/2026","projeto":"Chat Humano AURA","acao":"Realizar reunião de priorização dos pontos de melhoria do Portal de Atendimento Humano enviados por Cláudio","responsavel":"Nakakura e Lucas","status":"Pendente"},
+    {"data":"05/07/2026","projeto":"CENTRAL DF - Transbordo URA → WhatsApp AURA → migração WhatsApp para a AURA","acao":"Levantamento e publicação da pesquisa de satisfação no WhatsApp","responsavel":"Equipe Bruno","status":"Pendente"},
+    {"data":"A definir","projeto":"CENTRAL DF - Transbordo URA → WhatsApp AURA → migração WhatsApp para a AURA","acao":"Reunião técnica com a Tactium para transição do transbordo da URA com integração ao WhatsApp","responsavel":"Tactium / Equipe IA CIT","status":"Pendente"},
+    {"data":"A definir","projeto":"CENTRAL DF - Transbordo URA → WhatsApp AURA → migração WhatsApp para a AURA","acao":"Definir janela de produção e plano de rollback","responsavel":"A definir","status":"Pendente"},
+    {"data":"05/07/2026","projeto":"Validação dos Links do Painel AIOps da Central DF","acao":"Finalizar validação dos links do painel AIOps e consolidar apontamentos de informações desatualizadas","responsavel":"Anderson Pinheiro","status":"Em andamento"}
   ],
-  "demandasConcluidas": [
-    {
-      "titulo": "Central DF – Atualização de Razão Social e CNPJ da Conta Gupshup",
-      "projeto": "Central DF",
-      "categoria": "Gestão Contratual",
-      "responsavel": "Anderson Pinheiro",
-      "periodo": "26/05/2026 a 01/06/2026",
-      "status": "Concluído",
-      "resultado": "Atualização cadastral realizada com sucesso junto à Gupshup, adequando a conta à nova estrutura contratual da Central IT Tecnologia da Informação S/A."
-    }
-  ],
-  "incidentes": [
-    {
-      "titulo": "Gupshup – Falha no Recebimento de Código 2FA",
-      "sistema": "Gupshup WhatsApp",
-      "responsavel": "Anderson Pinheiro",
-      "abertura": "01/06/2026",
-      "encerramento": "01/06/2026",
-      "prioridade": "Alta",
-      "status": "Concluído",
-      "causa": "Exigência de autenticação multifator (MFA) pela Gupshup como nova política de segurança para acesso à plataforma.",
-      "acaoExecutada": "Ativação do MFA utilizando Microsoft Authenticator, validação de acesso à plataforma, cadastro inicial dos dispositivos autorizados, teste de acesso com Felipe Cardador e comunicação aos responsáveis pela plataforma.",
-      "resultado": "Incidente resolvido no mesmo dia da abertura. Acesso restabelecido com sucesso, MFA configurado e processo de governança de acessos definido."
-    }
-  ],
+  "demandasConcluidas": [{"titulo":"Central DF – Atualização de Razão Social e CNPJ da Conta Gupshup","projeto":"Central DF","categoria":"Gestão Contratual","responsavel":"Anderson Pinheiro","periodo":"26/05/2026 a 01/06/2026","status":"Concluído","resultado":"Atualização cadastral realizada com sucesso junto à Gupshup, adequando a conta à nova estrutura contratual da Central IT Tecnologia da Informação S/A."}],
+  "incidentes": [{"titulo":"Gupshup – Falha no Recebimento de Código 2FA","sistema":"Gupshup WhatsApp","responsavel":"Anderson Pinheiro","abertura":"01/06/2026","encerramento":"01/06/2026","prioridade":"Alta","status":"Concluído","causa":"Exigência de autenticação multifator (MFA) pela Gupshup como nova política de segurança para acesso à plataforma.","acaoExecutada":"Ativação do MFA utilizando Microsoft Authenticator, validação de acesso à plataforma, cadastro inicial dos dispositivos autorizados, teste de acesso com Felipe Cardador e comunicação aos responsáveis pela plataforma.","resultado":"Incidente resolvido no mesmo dia da abertura. Acesso restabelecido com sucesso, MFA configurado e processo de governança de acessos definido."}],
   "pendencias": [
-    {
-      "prazo": "05/06/2026",
-      "pendencia": "Realizar reunião de priorização dos pontos de melhoria do Portal de Atendimento Humano enviados por Cláudio",
-      "projeto": "Chat Humano AURA",
-      "responsavel": "Nakakura e Lucas",
-      "status": "Pendente"
-    },
-    {
-      "prazo": "05/07/2026",
-      "pendencia": "Levantamento e publicação da pesquisa de satisfação no WhatsApp",
-      "projeto": "Transbordo URA → WhatsApp AURA",
-      "responsavel": "Equipe Bruno",
-      "status": "Pendente"
-    },
-    {
-      "prazo": "A definir",
-      "pendencia": "Reunião técnica com a Tactium para transição do transbordo da URA com integração ao WhatsApp",
-      "projeto": "Transbordo URA → WhatsApp AURA",
-      "responsavel": "Tactium / Equipe IA CIT",
-      "status": "Pendente"
-    },
-    {
-      "prazo": "A definir",
-      "pendencia": "Definir janela de produção e plano de rollback",
-      "projeto": "Transbordo URA → WhatsApp AURA",
-      "responsavel": "A definir",
-      "status": "Pendente"
-    },
-    {
-      "prazo": "05/07/2026",
-      "pendencia": "Finalizar validação dos links do painel AIOps da Central DF e consolidar apontamentos de informações desatualizadas",
-      "projeto": "Validação dos Links do Painel AIOps da Central DF",
-      "responsavel": "Anderson Pinheiro",
-      "status": "Em andamento"
-    }
+    {"prazo":"05/06/2026","pendencia":"Realizar reunião de priorização dos pontos de melhoria do Portal de Atendimento Humano enviados por Cláudio","projeto":"Chat Humano AURA","responsavel":"Nakakura e Lucas","status":"Pendente"},
+    {"prazo":"05/07/2026","pendencia":"Levantamento e publicação da pesquisa de satisfação no WhatsApp","projeto":"CENTRAL DF - Transbordo URA → WhatsApp AURA → migração WhatsApp para a AURA","responsavel":"Equipe Bruno","status":"Pendente"},
+    {"prazo":"A definir","pendencia":"Reunião técnica com a Tactium para transição do transbordo da URA com integração ao WhatsApp","projeto":"CENTRAL DF - Transbordo URA → WhatsApp AURA → migração WhatsApp para a AURA","responsavel":"Tactium / Equipe IA CIT","status":"Pendente"},
+    {"prazo":"A definir","pendencia":"Definir janela de produção e plano de rollback","projeto":"CENTRAL DF - Transbordo URA → WhatsApp AURA → migração WhatsApp para a AURA","responsavel":"A definir","status":"Pendente"},
+    {"prazo":"05/07/2026","pendencia":"Finalizar validação dos links do painel AIOps da Central DF e consolidar apontamentos de informações desatualizadas","projeto":"Validação dos Links do Painel AIOps da Central DF","responsavel":"Anderson Pinheiro","status":"Em andamento"}
   ]
 }
