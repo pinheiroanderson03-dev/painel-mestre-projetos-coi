@@ -1,534 +1,90 @@
 {
-  "versao": "9.3",
+  "versao": "9.4",
   "ultimaAtualizacao": "2026-06-02",
   "projetoBase": "PMO Executivo Mensal - COI / Central DF / AURA / MDS",
   "responsavelPrincipal": "Anderson Pinheiro",
-  "observacao": "Cadastro do projeto concluído de recarga emergencial de créditos Gupshup no contrato Central DF, com conclusão em 27/05/2026 e registro do Ticket nº 511151.",
+  "observacao": "Cadastro do projeto concluído Campanha Ativa de Resgate Qualifica DF na frente Central DF, com conclusão em 18/05/2026, conforme documentos fonte da campanha.",
   "dashboard": {
-    "atividadesConcluidasMes": 24
+    "atividadesConcluidasMes": 25
   },
   "frentes": [
-    {
-      "nome": "CENTRAL DF",
-      "quantidade": 5
-    },
-    {
-      "nome": "CENTRAL DE ATENDIMENTO",
-      "quantidade": 2
-    },
-    {
-      "nome": "MDS",
-      "quantidade": 3
-    }
+    {"nome":"CENTRAL DF","quantidade":6},
+    {"nome":"CENTRAL DE ATENDIMENTO","quantidade":2},
+    {"nome":"MDS","quantidade":3}
   ],
   "proximasEntregas": {
     "proximos15Dias": [
-      {
-        "data": "05/06/2026 19:00 - 06/06/2026 00:00",
-        "projeto": "MDS - Projeto Atualização CITSmartX",
-        "entrega": "Execução da atualização tecnológica do ambiente CITSmartX do MDS",
-        "responsavel": "Anderson Pinheiro / Daiane / Equipes TD, IA e CIOTI",
-        "status": "Em andamento"
-      },
-      {
-        "data": "05/06/2026",
-        "projeto": "CENTRAL DF - Chat Humano AURA",
-        "entrega": "Reunião de priorização dos pontos de melhoria do Portal de Atendimento Humano",
-        "responsavel": "Nakakura e Lucas",
-        "status": "Pendente"
-      },
-      {
-        "data": "08/06/2026",
-        "projeto": "CENTRAL DF - Transbordo URA para WhatsApp AURA",
-        "entrega": "Levantamento e publicação da pesquisa de satisfação no WhatsApp",
-        "responsavel": "Equipe Bruno",
-        "status": "Pendente"
-      },
-      {
-        "data": "08/06/2026",
-        "projeto": "CENTRAL DF - Validação do Painel AIOps",
-        "entrega": "Finalizar validação dos links do painel AIOps e consolidar apontamentos",
-        "responsavel": "Anderson Pinheiro",
-        "status": "Em andamento"
-      },
-      {
-        "data": "03/06/2026",
-        "projeto": "CENTRAL DF - Transbordo URA para WhatsApp AURA",
-        "entrega": "Reunião de apresentação da ferramenta AURA de disparos",
-        "responsavel": "Equipe COI / AURA",
-        "status": "Programado"
-      }
+      {"data":"05/06/2026 19:00 - 06/06/2026 00:00","projeto":"MDS - Projeto Atualização CITSmartX","entrega":"Execução da atualização tecnológica do ambiente CITSmartX do MDS","responsavel":"Anderson Pinheiro / Daiane / Equipes TD, IA e CIOTI","status":"Em andamento"},
+      {"data":"05/06/2026","projeto":"CENTRAL DF - Chat Humano AURA","entrega":"Reunião de priorização dos pontos de melhoria do Portal de Atendimento Humano","responsavel":"Nakakura e Lucas","status":"Pendente"},
+      {"data":"08/06/2026","projeto":"CENTRAL DF - Transbordo URA para WhatsApp AURA","entrega":"Levantamento e publicação da pesquisa de satisfação no WhatsApp","responsavel":"Equipe Bruno","status":"Pendente"},
+      {"data":"08/06/2026","projeto":"CENTRAL DF - Validação do Painel AIOps","entrega":"Finalizar validação dos links do painel AIOps e consolidar apontamentos","responsavel":"Anderson Pinheiro","status":"Em andamento"},
+      {"data":"03/06/2026","projeto":"CENTRAL DF - Transbordo URA para WhatsApp AURA","entrega":"Reunião de apresentação da ferramenta AURA de disparos","responsavel":"Equipe COI / AURA","status":"Programado"}
     ],
     "emAndamento": [
-      {
-        "projeto": "MDS - Projeto Atualização CITSmartX",
-        "entrega": "Planejamento, backup, atualização, validação, testes e conclusão da janela de atualização do CITSmartX",
-        "responsavel": "Anderson Pinheiro / Daiane / Equipes TD, IA e CIOTI",
-        "status": "Em andamento"
-      },
-      {
-        "projeto": "CENTRAL DF - Tratamento de Mailing com IA",
-        "entrega": "Testes em operação e replicação em ambiente CITSmartX - Homologação",
-        "responsavel": "Anderson Pinheiro",
-        "status": "Em andamento / Homologação"
-      },
-      {
-        "projeto": "CENTRAL DE ATENDIMENTO - URA Inteligente",
-        "entrega": "Definição de casos de uso prioritários e proposta técnica",
-        "responsavel": "Guilherme Pereira de Castro / Anderson Pinheiro",
-        "status": "Pendente"
-      },
-      {
-        "projeto": "CENTRAL DE ATENDIMENTO - Claude IA Relatórios Automatizados",
-        "entrega": "Definição do padrão de relatório, validação de dados e criação do agente",
-        "responsavel": "Anderson / a definir",
-        "status": "Em andamento"
-      },
-      {
-        "projeto": "MDS - Formulário de Ouvidoria",
-        "entrega": "Continuação da publicação no ambiente CITSmartX do MDS",
-        "responsavel": "Daiane / Anderson Pinheiro",
-        "status": "Pendente"
-      },
-      {
-        "projeto": "MDS - WFM Workforce Management",
-        "entrega": "Avaliação funcional, aderência e viabilidade econômica/comercial",
-        "responsavel": "Vinicius Bastos / Rafael Carvalho / Anderson / Daiane",
-        "status": "Pendente"
-      }
+      {"projeto":"MDS - Projeto Atualização CITSmartX","entrega":"Planejamento, backup, atualização, validação, testes e conclusão da janela de atualização do CITSmartX","responsavel":"Anderson Pinheiro / Daiane / Equipes TD, IA e CIOTI","status":"Em andamento"},
+      {"projeto":"CENTRAL DF - Tratamento de Mailing com IA","entrega":"Testes em operação e replicação em ambiente CITSmartX - Homologação","responsavel":"Anderson Pinheiro","status":"Em andamento / Homologação"},
+      {"projeto":"CENTRAL DE ATENDIMENTO - URA Inteligente","entrega":"Definição de casos de uso prioritários e proposta técnica","responsavel":"Guilherme Pereira de Castro / Anderson Pinheiro","status":"Pendente"},
+      {"projeto":"CENTRAL DE ATENDIMENTO - Claude IA Relatórios Automatizados","entrega":"Definição do padrão de relatório, validação de dados e criação do agente","responsavel":"Anderson / a definir","status":"Em andamento"},
+      {"projeto":"MDS - Formulário de Ouvidoria","entrega":"Continuação da publicação no ambiente CITSmartX do MDS","responsavel":"Daiane / Anderson Pinheiro","status":"Pendente"},
+      {"projeto":"MDS - WFM Workforce Management","entrega":"Avaliação funcional, aderência e viabilidade econômica/comercial","responsavel":"Vinicius Bastos / Rafael Carvalho / Anderson / Daiane","status":"Pendente"}
     ],
     "concluidosRecentemente": [
-      {
-        "data": "27/05/2026",
-        "projeto": "CENTRAL DF - Recarga Emergencial Gupshup",
-        "entrega": "Recarga emergencial de créditos da plataforma Gupshup e registro do Ticket nº 511151",
-        "responsavel": "Anderson Pinheiro",
-        "status": "Concluído"
-      },
-      {
-        "data": "01/06/2026",
-        "projeto": "Gupshup – Falha no Recebimento de Código 2FA",
-        "entrega": "Ativação do MFA e validação de acesso",
-        "responsavel": "Anderson Pinheiro",
-        "status": "Concluído"
-      },
-      {
-        "data": "02/06/2026",
-        "projeto": "MDS - WFM Workforce Management",
-        "entrega": "Apresentação do produto WFM",
-        "responsavel": "Anderson Pinheiro / Daiane",
-        "status": "Concluído"
-      },
-      {
-        "data": "29/05/2026",
-        "projeto": "MDS - Formulário de Ouvidoria",
-        "entrega": "Apresentação do sistema, ambiente, formulário e funcionalidades",
-        "responsavel": "Anderson Pinheiro / Daiane",
-        "status": "Concluído"
-      },
-      {
-        "data": "Junho/2026",
-        "projeto": "Regularização dos Registros de Campanhas AURA",
-        "entrega": "Procedimento excepcional validado para geração de tickets no CITSmartX com base nos mailings",
-        "responsavel": "Anderson Pinheiro",
-        "status": "Concluído"
-      }
+      {"data":"18/05/2026","projeto":"CENTRAL DF - Campanha Ativa de Resgate Qualifica DF","entrega":"Campanha ativa concluída com consolidação das informações operacionais e relatório executivo final","responsavel":"Anderson Pinheiro","status":"Concluído"},
+      {"data":"27/05/2026","projeto":"CENTRAL DF - Recarga Emergencial Gupshup","entrega":"Recarga emergencial de créditos da plataforma Gupshup e registro do Ticket nº 511151","responsavel":"Anderson Pinheiro","status":"Concluído"},
+      {"data":"01/06/2026","projeto":"Gupshup – Falha no Recebimento de Código 2FA","entrega":"Ativação do MFA e validação de acesso","responsavel":"Anderson Pinheiro","status":"Concluído"},
+      {"data":"02/06/2026","projeto":"MDS - WFM Workforce Management","entrega":"Apresentação do produto WFM","responsavel":"Anderson Pinheiro / Daiane","status":"Concluído"},
+      {"data":"29/05/2026","projeto":"MDS - Formulário de Ouvidoria","entrega":"Apresentação do sistema, ambiente, formulário e funcionalidades","responsavel":"Anderson Pinheiro / Daiane","status":"Concluído"},
+      {"data":"Junho/2026","projeto":"Regularização dos Registros de Campanhas AURA","entrega":"Procedimento excepcional validado para geração de tickets no CITSmartX com base nos mailings","responsavel":"Anderson Pinheiro","status":"Concluído"}
     ]
   },
   "tarefasConcluidas": [
-    {
-      "mes": "Abril/2026",
-      "data": "22/04/2026 10:00 - 11:00",
-      "projeto": "CENTRAL DE ATENDIMENTO - URA Inteligente",
-      "tarefa": "Reunião inicial [CA] Viabilidade de atendimento por IA (SACI)",
-      "responsavel": "Guilherme Pereira de Castro / Anderson Pinheiro",
-      "status": "Concluído"
-    },
-    {
-      "mes": "Maio/2026",
-      "data": "12/05/2026 10:00 - 10:30",
-      "projeto": "CENTRAL DE ATENDIMENTO - URA Inteligente",
-      "tarefa": "Reunião [CA] Uso de Agente no Atendimento",
-      "responsavel": "Guilherme Pereira de Castro / Anderson Pinheiro",
-      "status": "Concluído"
-    },
-    {
-      "mes": "Maio/2026",
-      "data": "27/05/2026 12:31",
-      "projeto": "CENTRAL DF - Recarga Emergencial Gupshup",
-      "tarefa": "Conclusão da recarga emergencial de créditos da plataforma Gupshup, vinculada ao Ticket nº 511151",
-      "responsavel": "Anderson Pinheiro",
-      "status": "Concluído"
-    },
-    {
-      "mes": "Maio/2026",
-      "data": "29/05/2026 11:00 - 11:30",
-      "projeto": "MDS - Formulário de Ouvidoria",
-      "tarefa": "Apresentação do Sistema Formulário de Ouvidoria",
-      "responsavel": "Anderson Pinheiro / Daiane",
-      "status": "Concluído"
-    },
-    {
-      "mes": "Junho/2026",
-      "data": "02/06/2026 16:00",
-      "projeto": "MDS - WFM Workforce Management",
-      "tarefa": "Apresentação do produto WFM",
-      "responsavel": "Anderson Pinheiro / Daiane",
-      "status": "Concluído"
-    },
-    {
-      "mes": "Junho/2026",
-      "data": "01/06/2026",
-      "projeto": "Gupshup – Falha no Recebimento de Código 2FA",
-      "tarefa": "Ativação do MFA com Microsoft Authenticator e validação de acesso à plataforma",
-      "responsavel": "Anderson Pinheiro",
-      "status": "Concluído"
-    },
-    {
-      "mes": "Junho/2026",
-      "data": "Junho/2026",
-      "projeto": "Regularização dos Registros de Campanhas AURA",
-      "tarefa": "Definição e validação de procedimento excepcional para geração dos tickets no CITSmartX com base nos registros de mailing",
-      "responsavel": "Anderson Pinheiro",
-      "status": "Concluído"
-    }
+    {"mes":"Abril/2026","data":"22/04/2026 10:00 - 11:00","projeto":"CENTRAL DE ATENDIMENTO - URA Inteligente","tarefa":"Reunião inicial [CA] Viabilidade de atendimento por IA (SACI)","responsavel":"Guilherme Pereira de Castro / Anderson Pinheiro","status":"Concluído"},
+    {"mes":"Maio/2026","data":"12/05/2026 10:00 - 10:30","projeto":"CENTRAL DE ATENDIMENTO - URA Inteligente","tarefa":"Reunião [CA] Uso de Agente no Atendimento","responsavel":"Guilherme Pereira de Castro / Anderson Pinheiro","status":"Concluído"},
+    {"mes":"Maio/2026","data":"18/05/2026","projeto":"CENTRAL DF - Campanha Ativa de Resgate Qualifica DF","tarefa":"Conclusão da campanha ativa de resgate do Qualifica DF, com consolidação das informações operacionais e encaminhamento do relatório executivo final","responsavel":"Anderson Pinheiro","status":"Concluído"},
+    {"mes":"Maio/2026","data":"27/05/2026 12:31","projeto":"CENTRAL DF - Recarga Emergencial Gupshup","tarefa":"Conclusão da recarga emergencial de créditos da plataforma Gupshup, vinculada ao Ticket nº 511151","responsavel":"Anderson Pinheiro","status":"Concluído"},
+    {"mes":"Maio/2026","data":"29/05/2026 11:00 - 11:30","projeto":"MDS - Formulário de Ouvidoria","tarefa":"Apresentação do Sistema Formulário de Ouvidoria","responsavel":"Anderson Pinheiro / Daiane","status":"Concluído"},
+    {"mes":"Junho/2026","data":"02/06/2026 16:00","projeto":"MDS - WFM Workforce Management","tarefa":"Apresentação do produto WFM","responsavel":"Anderson Pinheiro / Daiane","status":"Concluído"},
+    {"mes":"Junho/2026","data":"01/06/2026","projeto":"Gupshup – Falha no Recebimento de Código 2FA","tarefa":"Ativação do MFA com Microsoft Authenticator e validação de acesso à plataforma","responsavel":"Anderson Pinheiro","status":"Concluído"},
+    {"mes":"Junho/2026","data":"Junho/2026","projeto":"Regularização dos Registros de Campanhas AURA","tarefa":"Definição e validação de procedimento excepcional para geração dos tickets no CITSmartX com base nos registros de mailing","responsavel":"Anderson Pinheiro","status":"Concluído"}
   ],
   "competencias": [
-    {
-      "mes": "Abril/2026",
-      "status": "Realizado",
-      "atividades": [
-        "Reunião inicial [CA] Viabilidade de atendimento por IA (SACI), realizada em 22/04/2026."
-      ]
-    },
-    {
-      "mes": "Maio/2026",
-      "status": "Realizado",
-      "atividades": [
-        "Apresentação do MDS - Formulário de Ouvidoria.",
-        "Reunião [CA] Uso de Agente no Atendimento.",
-        "Mapeamento, regras de higienização, fluxo de validação, criação de agente e melhorias aplicadas no projeto CENTRAL DF - Tratamento de Mailing com IA.",
-        "Criação e validação do ambiente de homologação do WhatsApp com número (61) 99974-5325.",
-        "Mapeamento do fluxo atual do CENTRAL DF - Chat Humano AURA.",
-        "Conclusão da recarga emergencial de créditos da plataforma Gupshup no contrato Central DF, com registro do Ticket nº 511151 em 27/05/2026."
-      ]
-    },
-    {
-      "mes": "Junho/2026",
-      "status": "Em execução",
-      "atividades": [
-        "Planejamento e preparação da janela de atualização tecnológica do ambiente CITSmartX do MDS.",
-        "Reprogramação para 08/06/2026 do levantamento e publicação da pesquisa de satisfação no WhatsApp.",
-        "Reprogramação para 08/06/2026 da finalização da validação dos links do painel AIOps e consolidação dos apontamentos.",
-        "Formalização do CENTRAL DE ATENDIMENTO - URA Inteligente por meio da solicitação CITSmartX nº 515538.",
-        "Apresentação do MDS - WFM Workforce Management.",
-        "Regularização dos registros de campanhas AURA."
-      ]
-    },
-    {
-      "mes": "Julho/2026",
-      "status": "Planejado",
-      "atividades": [
-        "Avançar com testes integrados do CENTRAL DF - Transbordo URA para WhatsApp AURA.",
-        "Dar continuidade à publicação do MDS - Formulário de Ouvidoria no ambiente CITSmartX do MDS.",
-        "Avançar na avaliação funcional e econômica do MDS - WFM Workforce Management.",
-        "Definir casos de uso prioritários do CENTRAL DE ATENDIMENTO - URA Inteligente."
-      ]
-    }
+    {"mes":"Abril/2026","status":"Realizado","atividades":["Reunião inicial [CA] Viabilidade de atendimento por IA (SACI), realizada em 22/04/2026."]},
+    {"mes":"Maio/2026","status":"Realizado","atividades":["Apresentação do MDS - Formulário de Ouvidoria.","Reunião [CA] Uso de Agente no Atendimento.","Mapeamento, regras de higienização, fluxo de validação, criação de agente e melhorias aplicadas no projeto CENTRAL DF - Tratamento de Mailing com IA.","Criação e validação do ambiente de homologação do WhatsApp com número (61) 99974-5325.","Mapeamento do fluxo atual do CENTRAL DF - Chat Humano AURA.","Conclusão da campanha ativa de resgate Qualifica DF, com execução no período de 14/05/2026 a 16/05/2026 e envio do relatório consolidado em 18/05/2026.","Conclusão da recarga emergencial de créditos da plataforma Gupshup no contrato Central DF, com registro do Ticket nº 511151 em 27/05/2026."]},
+    {"mes":"Junho/2026","status":"Em execução","atividades":["Planejamento e preparação da janela de atualização tecnológica do ambiente CITSmartX do MDS.","Reprogramação para 08/06/2026 do levantamento e publicação da pesquisa de satisfação no WhatsApp.","Reprogramação para 08/06/2026 da finalização da validação dos links do painel AIOps e consolidação dos apontamentos.","Formalização do CENTRAL DE ATENDIMENTO - URA Inteligente por meio da solicitação CITSmartX nº 515538.","Apresentação do MDS - WFM Workforce Management.","Regularização dos registros de campanhas AURA."]},
+    {"mes":"Julho/2026","status":"Planejado","atividades":["Avançar com testes integrados do CENTRAL DF - Transbordo URA para WhatsApp AURA.","Dar continuidade à publicação do MDS - Formulário de Ouvidoria no ambiente CITSmartX do MDS.","Avançar na avaliação funcional e econômica do MDS - WFM Workforce Management.","Definir casos de uso prioritários do CENTRAL DE ATENDIMENTO - URA Inteligente."]}
   ],
   "projetos": [
-    {
-      "nome": "CENTRAL DF - Recarga Emergencial Gupshup",
-      "area": "CENTRAL DF",
-      "responsavel": "Anderson Pinheiro",
-      "status": "Concluído",
-      "prioridade": "Alta",
-      "inicio": "27/05/2026",
-      "ultimaAtualizacao": "27/05/2026",
-      "previsaoConclusao": "27/05/2026",
-      "competencia": "Maio/2026",
-      "progresso": "100%",
-      "objetivo": "Garantir a continuidade operacional dos serviços de comunicação via WhatsApp e campanhas institucionais do contrato Central DF por meio da recarga emergencial de créditos da plataforma Gupshup.",
-      "atividades": [
-        "✅ Solicitação de autorização para recarga emergencial de US$ 10.000,00 na conta Gupshup vinculada ao cliente ID 4000227375",
-        "✅ Alinhamento com diretoria para viabilização da recarga emergencial",
-        "✅ Registro do chamado referente à recarga e envio do comprovante de pagamento",
-        "✅ Conclusão registrada em 27/05/2026 às 12:31 por meio do Ticket nº 511151",
-        "✅ Sustentação da continuidade operacional das campanhas de Vacinação, SEDES, transbordo via WhatsApp, rotinas SISREG e demais operações em produção"
-      ]
-    },
-    {
-      "nome": "CENTRAL DF - Transbordo URA para WhatsApp AURA",
-      "area": "CENTRAL DF",
-      "responsavel": "Lucas",
-      "status": "Em andamento",
-      "prioridade": "Alta",
-      "inicio": "Maio/2026",
-      "ultimaAtualizacao": "02/06/2026",
-      "previsaoConclusao": "A definir",
-      "competencia": "Junho/2026",
-      "progresso": "57%",
-      "objetivo": "Evoluir o fluxo de transbordo da URA para atendimento via WhatsApp integrado à plataforma AURA.",
-      "atividades": [
-        "✅ Reunião de alinhamento com Lucas concluída em Maio/2026",
-        "✅ Mapeamento do fluxo atual concluído",
-        "✅ Ambiente de homologação do WhatsApp criado com o número (61) 99974-5325",
-        "✅ Teste do ambiente de homologação concluído em 22/05/2026",
-        "⏳ Levantamento e publicação da pesquisa de satisfação no WhatsApp — previsão 08/06/2026",
-        "⏳ Transição do transbordo da URA com integração ao WhatsApp pendente de reunião técnica com a Tactium",
-        "⏳ Validação do fluxo futuro na AURA"
-      ]
-    },
-    {
-      "nome": "CENTRAL DF - Chat Humano AURA",
-      "area": "CENTRAL DF",
-      "responsavel": "Nakakura e Lucas",
-      "status": "Em andamento",
-      "prioridade": "Alta",
-      "inicio": "Maio/2026",
-      "ultimaAtualizacao": "02/06/2026",
-      "previsaoConclusao": "05/06/2026",
-      "competencia": "Junho/2026",
-      "objetivo": "Evoluir o Portal de Atendimento Humano da AURA, priorizando os pontos de melhoria da ferramenta encaminhados por Cláudio.",
-      "atividades": [
-        "✅ Reunião de alinhamento com Lucas concluída",
-        "✅ Mapeamento do fluxo atual concluído",
-        "⏳ Reunião de priorização dos pontos de melhoria prevista para 05/06/2026"
-      ]
-    },
-    {
-      "nome": "CENTRAL DF - Tratamento de Mailing com IA",
-      "area": "CENTRAL DF",
-      "responsavel": "Anderson Pinheiro",
-      "status": "Em andamento",
-      "prioridade": "Média",
-      "inicio": "Maio/2026",
-      "ultimaAtualizacao": "02/06/2026",
-      "competencia": "Junho/2026",
-      "objetivo": "Aplicar IA no tratamento de bases de mailing para higienização, validação e melhoria operacional das campanhas da Central DF.",
-      "atividades": [
-        "✅ Mapear bases de mailing",
-        "✅ Definir regras de higienização",
-        "✅ Criar fluxo de validação",
-        "✅ Criação de agente",
-        "⏳ Testes em operação",
-        "⏳ Replicação em ambiente CITSmartX - Homologação",
-        "⏳ Execução em ambiente CITSmartX - Produção"
-      ]
-    },
-    {
-      "nome": "CENTRAL DF - Validação do Painel AIOps",
-      "area": "CENTRAL DF",
-      "responsavel": "Anderson Pinheiro",
-      "alinhamento": "Marcos Lacerda",
-      "status": "Em andamento",
-      "prioridade": "Alta",
-      "inicio": "Junho/2026",
-      "previsaoConclusao": "08/06/2026",
-      "competencia": "Junho/2026",
-      "objetivo": "Validar os links do painel AIOps da Central DF referentes aos serviços do cliente.",
-      "atividades": [
-        "Mapear links existentes no painel AIOps",
-        "Validar links dos serviços do cliente",
-        "Identificar informações desatualizadas",
-        "Finalizar validação dos links do painel AIOps e consolidar apontamentos — previsão 08/06/2026",
-        "Registrar evidências da validação"
-      ]
-    },
-    {
-      "nome": "CENTRAL DE ATENDIMENTO - URA Inteligente",
-      "area": "CENTRAL DE ATENDIMENTO",
-      "responsavel": "Guilherme Pereira de Castro | Anderson Pinheiro",
-      "status": "Em estudo / Planejamento",
-      "prioridade": "Alta",
-      "inicio": "22/04/2026",
-      "ultimaAtualizacao": "02/06/2026",
-      "previsaoConclusao": "A definir",
-      "competencia": "Julho/2026",
-      "progresso": "20%",
-      "objetivo": "Avaliar a utilização de Inteligência Artificial e agentes inteligentes para evolução da URA e dos canais de atendimento do COI.",
-      "atividades": [
-        "✅ Reunião inicial [CA] Viabilidade de atendimento por IA (SACI)",
-        "✅ Reunião [CA] Uso de Agente no Atendimento",
-        "✅ Abertura da solicitação CITSmartX nº 515538",
-        "⏳ Definir casos de uso prioritários",
-        "⏳ Elaborar proposta técnica da solução"
-      ]
-    },
-    {
-      "nome": "CENTRAL DE ATENDIMENTO - Claude IA Relatórios Automatizados",
-      "area": "CENTRAL DE ATENDIMENTO",
-      "responsavel": "Anderson / a definir",
-      "status": "Em andamento",
-      "prioridade": "Média",
-      "competencia": "Junho/2026",
-      "objetivo": "Estruturar relatórios automatizados da Central de Atendimento com apoio de IA Claude.",
-      "atividades": [
-        "Definir padrão de relatório",
-        "Validar dados de entrada",
-        "Criar agente de relatório"
-      ]
-    },
-    {
-      "nome": "MDS - Formulário de Ouvidoria",
-      "area": "MDS",
-      "responsavel": "Anderson Pinheiro | Daiane",
-      "status": "Em andamento",
-      "prioridade": "Média",
-      "inicio": "29/05/2026",
-      "ultimaAtualizacao": "02/06/2026",
-      "previsaoConclusao": "A definir",
-      "competencia": "Junho/2026",
-      "objetivo": "Acompanhar a evolução do Sistema Formulário de Ouvidoria para o MDS.",
-      "atividades": [
-        "✅ Apresentação do Sistema Formulário de Ouvidoria realizada em 29/05/2026",
-        "⏳ Continuação da publicação no ambiente CITSmartX do MDS",
-        "⏳ Documentação do produto para análise e ajustes",
-        "⏳ Análise de viabilidade econômica e financeira"
-      ]
-    },
-    {
-      "nome": "MDS - WFM Workforce Management",
-      "area": "MDS",
-      "responsavel": "Anderson Pinheiro | Daiane",
-      "status": "Em avaliação",
-      "prioridade": "Média",
-      "inicio": "02/06/2026",
-      "ultimaAtualizacao": "02/06/2026",
-      "previsaoConclusao": "A definir",
-      "competencia": "Junho/2026",
-      "objetivo": "Apresentar e avaliar o produto WFM como projeto vinculado ao MDS.",
-      "atividades": [
-        "✅ Apresentação do Produto WFM realizada em 02/06/2026",
-        "⏳ Avaliação funcional do produto",
-        "⏳ Levantamento de aderência aos contratos e operações",
-        "⏳ Análise de viabilidade econômica e comercial"
-      ]
-    },
-    {
-      "nome": "MDS - Projeto Atualização CITSmartX",
-      "area": "MDS",
-      "responsavel": "Anderson Pinheiro | Daiane",
-      "interessadosApoioTecnico": "Equipe TD, Equipe IA e Equipe CIOTI",
-      "status": "Em andamento",
-      "prioridade": "Alta",
-      "inicio": "05/06/2026 19:00",
-      "ultimaAtualizacao": "02/06/2026",
-      "previsaoConclusao": "06/06/2026 00:00",
-      "competencia": "Junho/2026",
-      "progresso": "20%",
-      "objetivo": "Realizar a atualização tecnológica do ambiente CITSmartX do MDS, contemplando os módulos ITSM, Low-Code e demais componentes acoplados à plataforma.",
-      "atividades": [
-        "⏳ Planejamento da atualização",
-        "⏳ Backup completo do ambiente",
-        "⏳ Atualização dos componentes da plataforma CITSmartX",
-        "⏳ Atualização do módulo ITSM",
-        "⏳ Atualização do módulo Low-Code",
-        "⏳ Validação técnica pós-atualização",
-        "⏳ Execução dos testes funcionais",
-        "⏳ Encerramento da janela de manutenção"
-      ]
-    }
+    {"nome":"CENTRAL DF - Campanha Ativa de Resgate Qualifica DF","area":"CENTRAL DF","responsavel":"Anderson Pinheiro","status":"Concluído","prioridade":"Alta","inicio":"13/05/2026","ultimaAtualizacao":"18/05/2026","previsaoConclusao":"18/05/2026","competencia":"Maio/2026","progresso":"100%","objetivo":"Realizar campanha ativa de contato humanizado com cidadãos vinculados ao programa Qualifica DF que apresentaram ausência nas atividades dos cursos ofertados, visando identificar os motivos da evasão, promover ações de reengajamento, incentivar o retorno às atividades e gerar informações estratégicas para aprimoramento do programa.","atividades":["✅ Alinhamento operacional com a equipe do programa Qualifica DF","✅ Construção e validação do roteiro oficial de atendimento humanizado","✅ Recebimento e tratamento da base de contatos encaminhada pelo cliente","✅ Segmentação dos participantes por perfil de ausência","✅ Execução da campanha ativa de contato telefônico no período de 14/05/2026 a 16/05/2026","✅ Registro padronizado das informações coletadas","✅ Consolidação das informações operacionais","✅ Elaboração e apresentação do relatório executivo final em 18/05/2026"]},
+    {"nome":"CENTRAL DF - Recarga Emergencial Gupshup","area":"CENTRAL DF","responsavel":"Anderson Pinheiro","status":"Concluído","prioridade":"Alta","inicio":"27/05/2026","ultimaAtualizacao":"27/05/2026","previsaoConclusao":"27/05/2026","competencia":"Maio/2026","progresso":"100%","objetivo":"Garantir a continuidade operacional dos serviços de comunicação via WhatsApp e campanhas institucionais do contrato Central DF por meio da recarga emergencial de créditos da plataforma Gupshup.","atividades":["✅ Solicitação de autorização para recarga emergencial de US$ 10.000,00 na conta Gupshup vinculada ao cliente ID 4000227375","✅ Alinhamento com diretoria para viabilização da recarga emergencial","✅ Registro do chamado referente à recarga e envio do comprovante de pagamento","✅ Conclusão registrada em 27/05/2026 às 12:31 por meio do Ticket nº 511151","✅ Sustentação da continuidade operacional das campanhas de Vacinação, SEDES, transbordo via WhatsApp, rotinas SISREG e demais operações em produção"]},
+    {"nome":"CENTRAL DF - Transbordo URA para WhatsApp AURA","area":"CENTRAL DF","responsavel":"Lucas","status":"Em andamento","prioridade":"Alta","inicio":"Maio/2026","ultimaAtualizacao":"02/06/2026","previsaoConclusao":"A definir","competencia":"Junho/2026","progresso":"57%","objetivo":"Evoluir o fluxo de transbordo da URA para atendimento via WhatsApp integrado à plataforma AURA.","atividades":["✅ Reunião de alinhamento com Lucas concluída em Maio/2026","✅ Mapeamento do fluxo atual concluído","✅ Ambiente de homologação do WhatsApp criado com o número (61) 99974-5325","✅ Teste do ambiente de homologação concluído em 22/05/2026","⏳ Levantamento e publicação da pesquisa de satisfação no WhatsApp — previsão 08/06/2026","⏳ Transição do transbordo da URA com integração ao WhatsApp pendente de reunião técnica com a Tactium","⏳ Validação do fluxo futuro na AURA"]},
+    {"nome":"CENTRAL DF - Chat Humano AURA","area":"CENTRAL DF","responsavel":"Nakakura e Lucas","status":"Em andamento","prioridade":"Alta","inicio":"Maio/2026","ultimaAtualizacao":"02/06/2026","previsaoConclusao":"05/06/2026","competencia":"Junho/2026","objetivo":"Evoluir o Portal de Atendimento Humano da AURA, priorizando os pontos de melhoria da ferramenta encaminhados por Cláudio.","atividades":["✅ Reunião de alinhamento com Lucas concluída","✅ Mapeamento do fluxo atual concluído","⏳ Reunião de priorização dos pontos de melhoria prevista para 05/06/2026"]},
+    {"nome":"CENTRAL DF - Tratamento de Mailing com IA","area":"CENTRAL DF","responsavel":"Anderson Pinheiro","status":"Em andamento","prioridade":"Média","inicio":"Maio/2026","ultimaAtualizacao":"02/06/2026","competencia":"Junho/2026","objetivo":"Aplicar IA no tratamento de bases de mailing para higienização, validação e melhoria operacional das campanhas da Central DF.","atividades":["✅ Mapear bases de mailing","✅ Definir regras de higienização","✅ Criar fluxo de validação","✅ Criação de agente","⏳ Testes em operação","⏳ Replicação em ambiente CITSmartX - Homologação","⏳ Execução em ambiente CITSmartX - Produção"]},
+    {"nome":"CENTRAL DF - Validação do Painel AIOps","area":"CENTRAL DF","responsavel":"Anderson Pinheiro","alinhamento":"Marcos Lacerda","status":"Em andamento","prioridade":"Alta","inicio":"Junho/2026","previsaoConclusao":"08/06/2026","competencia":"Junho/2026","objetivo":"Validar os links do painel AIOps da Central DF referentes aos serviços do cliente.","atividades":["Mapear links existentes no painel AIOps","Validar links dos serviços do cliente","Identificar informações desatualizadas","Finalizar validação dos links do painel AIOps e consolidar apontamentos — previsão 08/06/2026","Registrar evidências da validação"]},
+    {"nome":"CENTRAL DE ATENDIMENTO - URA Inteligente","area":"CENTRAL DE ATENDIMENTO","responsavel":"Guilherme Pereira de Castro | Anderson Pinheiro","status":"Em estudo / Planejamento","prioridade":"Alta","inicio":"22/04/2026","ultimaAtualizacao":"02/06/2026","previsaoConclusao":"A definir","competencia":"Julho/2026","progresso":"20%","objetivo":"Avaliar a utilização de Inteligência Artificial e agentes inteligentes para evolução da URA e dos canais de atendimento do COI.","atividades":["✅ Reunião inicial [CA] Viabilidade de atendimento por IA (SACI)","✅ Reunião [CA] Uso de Agente no Atendimento","✅ Abertura da solicitação CITSmartX nº 515538","⏳ Definir casos de uso prioritários","⏳ Elaborar proposta técnica da solução"]},
+    {"nome":"CENTRAL DE ATENDIMENTO - Claude IA Relatórios Automatizados","area":"CENTRAL DE ATENDIMENTO","responsavel":"Anderson / a definir","status":"Em andamento","prioridade":"Média","competencia":"Junho/2026","objetivo":"Estruturar relatórios automatizados da Central de Atendimento com apoio de IA Claude.","atividades":["Definir padrão de relatório","Validar dados de entrada","Criar agente de relatório"]},
+    {"nome":"MDS - Formulário de Ouvidoria","area":"MDS","responsavel":"Anderson Pinheiro | Daiane","status":"Em andamento","prioridade":"Média","inicio":"29/05/2026","ultimaAtualizacao":"02/06/2026","previsaoConclusao":"A definir","competencia":"Junho/2026","objetivo":"Acompanhar a evolução do Sistema Formulário de Ouvidoria para o MDS.","atividades":["✅ Apresentação do Sistema Formulário de Ouvidoria realizada em 29/05/2026","⏳ Continuação da publicação no ambiente CITSmartX do MDS","⏳ Documentação do produto para análise e ajustes","⏳ Análise de viabilidade econômica e financeira"]},
+    {"nome":"MDS - WFM Workforce Management","area":"MDS","responsavel":"Anderson Pinheiro | Daiane","status":"Em avaliação","prioridade":"Média","inicio":"02/06/2026","ultimaAtualizacao":"02/06/2026","previsaoConclusao":"A definir","competencia":"Junho/2026","objetivo":"Apresentar e avaliar o produto WFM como projeto vinculado ao MDS.","atividades":["✅ Apresentação do Produto WFM realizada em 02/06/2026","⏳ Avaliação funcional do produto","⏳ Levantamento de aderência aos contratos e operações","⏳ Análise de viabilidade econômica e comercial"]},
+    {"nome":"MDS - Projeto Atualização CITSmartX","area":"MDS","responsavel":"Anderson Pinheiro | Daiane","interessadosApoioTecnico":"Equipe TD, Equipe IA e Equipe CIOTI","status":"Em andamento","prioridade":"Alta","inicio":"05/06/2026 19:00","ultimaAtualizacao":"02/06/2026","previsaoConclusao":"06/06/2026 00:00","competencia":"Junho/2026","progresso":"20%","objetivo":"Realizar a atualização tecnológica do ambiente CITSmartX do MDS, contemplando os módulos ITSM, Low-Code e demais componentes acoplados à plataforma.","atividades":["⏳ Planejamento da atualização","⏳ Backup completo do ambiente","⏳ Atualização dos componentes da plataforma CITSmartX","⏳ Atualização do módulo ITSM","⏳ Atualização do módulo Low-Code","⏳ Validação técnica pós-atualização","⏳ Execução dos testes funcionais","⏳ Encerramento da janela de manutenção"]}
   ],
   "demandasConcluidas": [
-    {
-      "titulo": "Central DF – Recarga Emergencial de Créditos da Plataforma Gupshup",
-      "projeto": "Central DF",
-      "categoria": "Sustentação Operacional / Comunicação Omnichannel",
-      "responsavel": "Anderson Pinheiro",
-      "periodo": "27/05/2026",
-      "status": "Concluído",
-      "resultado": "Recarga emergencial de US$ 10.000,00 formalizada para a conta Gupshup vinculada ao cliente ID 4000227375, garantindo a continuidade das campanhas institucionais, transbordo via WhatsApp, rotinas SISREG e demais operações em produção. Conclusão registrada pelo Ticket nº 511151."
-    },
-    {
-      "titulo": "Central DF – Atualização de Razão Social e CNPJ da Conta Gupshup",
-      "projeto": "Central DF",
-      "categoria": "Gestão Contratual",
-      "responsavel": "Anderson Pinheiro",
-      "periodo": "26/05/2026 a 01/06/2026",
-      "status": "Concluído",
-      "resultado": "Atualização cadastral realizada com sucesso junto à Gupshup."
-    },
-    {
-      "titulo": "Regularização dos Registros de Campanhas AURA – Disparos de Campanhas",
-      "projeto": "Central DF / AURA",
-      "categoria": "Governança Operacional / Campanhas AURA",
-      "responsavel": "Anderson Pinheiro",
-      "periodo": "Maio/2026 a Junho/2026",
-      "status": "Concluído",
-      "resultado": "Procedimento excepcional validado para geração dos tickets no CITSmartX com base nos dados dos mailings executados."
-    }
+    {"titulo":"Central DF – Campanha Ativa de Resgate Qualifica DF","projeto":"Central DF","categoria":"Campanha Ativa / Recuperação de Participantes / Atendimento Humanizado","responsavel":"Anderson Pinheiro","periodo":"13/05/2026 a 18/05/2026","status":"Concluído","resultado":"Campanha ativa concluída, contemplando planejamento, execução operacional no período de 14/05/2026 a 16/05/2026, consolidação das informações coletadas e encaminhamento do relatório executivo final em 18/05/2026."},
+    {"titulo":"Central DF – Recarga Emergencial de Créditos da Plataforma Gupshup","projeto":"Central DF","categoria":"Sustentação Operacional / Comunicação Omnichannel","responsavel":"Anderson Pinheiro","periodo":"27/05/2026","status":"Concluído","resultado":"Recarga emergencial de US$ 10.000,00 formalizada para a conta Gupshup vinculada ao cliente ID 4000227375, garantindo a continuidade das campanhas institucionais, transbordo via WhatsApp, rotinas SISREG e demais operações em produção. Conclusão registrada pelo Ticket nº 511151."},
+    {"titulo":"Central DF – Atualização de Razão Social e CNPJ da Conta Gupshup","projeto":"Central DF","categoria":"Gestão Contratual","responsavel":"Anderson Pinheiro","periodo":"26/05/2026 a 01/06/2026","status":"Concluído","resultado":"Atualização cadastral realizada com sucesso junto à Gupshup."},
+    {"titulo":"Regularização dos Registros de Campanhas AURA – Disparos de Campanhas","projeto":"Central DF / AURA","categoria":"Governança Operacional / Campanhas AURA","responsavel":"Anderson Pinheiro","periodo":"Maio/2026 a Junho/2026","status":"Concluído","resultado":"Procedimento excepcional validado para geração dos tickets no CITSmartX com base nos dados dos mailings executados."}
   ],
   "incidentes": [
-    {
-      "titulo": "Gupshup – Falha no Recebimento de Código 2FA",
-      "sistema": "Gupshup WhatsApp",
-      "responsavel": "Anderson Pinheiro",
-      "abertura": "01/06/2026",
-      "encerramento": "01/06/2026",
-      "prioridade": "Alta",
-      "status": "Concluído",
-      "resultado": "MFA configurado com Microsoft Authenticator e acesso restabelecido."
-    }
+    {"titulo":"Gupshup – Falha no Recebimento de Código 2FA","sistema":"Gupshup WhatsApp","responsavel":"Anderson Pinheiro","abertura":"01/06/2026","encerramento":"01/06/2026","prioridade":"Alta","status":"Concluído","resultado":"MFA configurado com Microsoft Authenticator e acesso restabelecido."}
   ],
   "prazos": [
-    {
-      "data": "05/06/2026 19:00 - 06/06/2026 00:00",
-      "projeto": "MDS - Projeto Atualização CITSmartX",
-      "acao": "Execução da atualização tecnológica do ambiente CITSmartX do MDS",
-      "responsavel": "Anderson Pinheiro / Daiane / Equipes TD, IA e CIOTI",
-      "status": "Em andamento"
-    },
-    {
-      "data": "05/06/2026",
-      "projeto": "CENTRAL DF - Chat Humano AURA",
-      "acao": "Realizar reunião de priorização dos pontos de melhoria do Portal de Atendimento Humano enviados por Cláudio",
-      "responsavel": "Nakakura e Lucas",
-      "status": "Pendente"
-    },
-    {
-      "data": "08/06/2026",
-      "projeto": "CENTRAL DF - Transbordo URA para WhatsApp AURA",
-      "acao": "Levantamento e publicação da pesquisa de satisfação no WhatsApp",
-      "responsavel": "Equipe Bruno",
-      "status": "Pendente"
-    },
-    {
-      "data": "08/06/2026",
-      "projeto": "CENTRAL DF - Validação do Painel AIOps",
-      "acao": "Finalizar validação dos links do painel AIOps e consolidar apontamentos de informações desatualizadas",
-      "responsavel": "Anderson Pinheiro",
-      "status": "Em andamento"
-    }
+    {"data":"05/06/2026 19:00 - 06/06/2026 00:00","projeto":"MDS - Projeto Atualização CITSmartX","acao":"Execução da atualização tecnológica do ambiente CITSmartX do MDS","responsavel":"Anderson Pinheiro / Daiane / Equipes TD, IA e CIOTI","status":"Em andamento"},
+    {"data":"05/06/2026","projeto":"CENTRAL DF - Chat Humano AURA","acao":"Realizar reunião de priorização dos pontos de melhoria do Portal de Atendimento Humano enviados por Cláudio","responsavel":"Nakakura e Lucas","status":"Pendente"},
+    {"data":"08/06/2026","projeto":"CENTRAL DF - Transbordo URA para WhatsApp AURA","acao":"Levantamento e publicação da pesquisa de satisfação no WhatsApp","responsavel":"Equipe Bruno","status":"Pendente"},
+    {"data":"08/06/2026","projeto":"CENTRAL DF - Validação do Painel AIOps","acao":"Finalizar validação dos links do painel AIOps e consolidar apontamentos de informações desatualizadas","responsavel":"Anderson Pinheiro","status":"Em andamento"}
   ],
   "pendencias": [
-    {
-      "prazo": "05/06/2026 19:00 - 06/06/2026 00:00",
-      "pendencia": "Executar atualização tecnológica do ambiente CITSmartX do MDS",
-      "projeto": "MDS - Projeto Atualização CITSmartX",
-      "responsavel": "Anderson Pinheiro / Daiane / Equipes TD, IA e CIOTI",
-      "status": "Em andamento"
-    },
-    {
-      "prazo": "05/06/2026",
-      "pendencia": "Realizar reunião de priorização dos pontos de melhoria do Portal de Atendimento Humano enviados por Cláudio",
-      "projeto": "CENTRAL DF - Chat Humano AURA",
-      "responsavel": "Nakakura e Lucas",
-      "status": "Pendente"
-    },
-    {
-      "prazo": "08/06/2026",
-      "pendencia": "Levantamento e publicação da pesquisa de satisfação no WhatsApp",
-      "projeto": "CENTRAL DF - Transbordo URA para WhatsApp AURA",
-      "responsavel": "Equipe Bruno",
-      "status": "Pendente"
-    },
-    {
-      "prazo": "08/06/2026",
-      "pendencia": "Finalizar validação dos links do painel AIOps da Central DF e consolidar apontamentos de informações desatualizadas",
-      "projeto": "CENTRAL DF - Validação do Painel AIOps",
-      "responsavel": "Anderson Pinheiro",
-      "status": "Em andamento"
-    }
+    {"prazo":"05/06/2026 19:00 - 06/06/2026 00:00","pendencia":"Executar atualização tecnológica do ambiente CITSmartX do MDS","projeto":"MDS - Projeto Atualização CITSmartX","responsavel":"Anderson Pinheiro / Daiane / Equipes TD, IA e CIOTI","status":"Em andamento"},
+    {"prazo":"05/06/2026","pendencia":"Realizar reunião de priorização dos pontos de melhoria do Portal de Atendimento Humano enviados por Cláudio","projeto":"CENTRAL DF - Chat Humano AURA","responsavel":"Nakakura e Lucas","status":"Pendente"},
+    {"prazo":"08/06/2026","pendencia":"Levantamento e publicação da pesquisa de satisfação no WhatsApp","projeto":"CENTRAL DF - Transbordo URA para WhatsApp AURA","responsavel":"Equipe Bruno","status":"Pendente"},
+    {"prazo":"08/06/2026","pendencia":"Finalizar validação dos links do painel AIOps da Central DF e consolidar apontamentos de informações desatualizadas","projeto":"CENTRAL DF - Validação do Painel AIOps","responsavel":"Anderson Pinheiro","status":"Em andamento"}
   ]
 }
