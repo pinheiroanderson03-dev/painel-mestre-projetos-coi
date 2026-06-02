@@ -122,3 +122,30 @@ Não duplicar esses totais manualmente em `dados_painel_aura.json`.
 - [ ] O diff contém somente arquivos necessários.
 - [ ] Arquivos históricos não foram excluídos sem aprovação.
 - [ ] O Pull Request será aberto para revisão antes de qualquer merge.
+
+## Como interpretar atualizações enviadas pelo Anderson
+
+Quando o usuário enviar informações em linguagem natural:
+
+- Identificar automaticamente se é:
+  - Novo projeto
+  - Atualização de projeto
+  - Nova demanda
+  - Incidente
+  - Pendência
+  - Entrega concluída
+- Identificar automaticamente a frente:
+  - `CENTRAL DF`
+  - `CENTRAL DE ATENDIMENTO`
+  - `MDS`
+- Apresentar o entendimento antes de alterar qualquer arquivo.
+
+Formato obrigatório:
+
+1. O que foi entendido
+2. Projeto impactado
+3. Frente
+4. Arquivos que serão alterados
+5. Resumo da alteração
+
+Somente após aprovação do usuário realizar a alteração.
