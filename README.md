@@ -2,11 +2,20 @@
 
 ## Versão Atual
 
-Painel Executivo AURA v5.0
+Painel Executivo COI v9.2
 
 ## Objetivo
 
 Centralizar o acompanhamento dos projetos, incidentes, demandas concluídas, pendências executivas e atividades mensais relacionadas ao COI, Central DF, AURA, CitSmartX, Gupshup, Automação e IA.
+
+## Arquivos Principais
+
+- `index.html`: página principal do painel executivo.
+- `dados_painel_aura.json`: base de dados carregada pelo painel.
+
+## Indicadores
+
+Os indicadores do dashboard são calculados automaticamente a partir das listas da base de dados, evitando divergências entre os totais exibidos e os registros detalhados.
 
 ## Estrutura
 
@@ -31,4 +40,4 @@ GitHub Pages
 
 ## Última Atualização
 
-01/06/2026
+02/06/2026
