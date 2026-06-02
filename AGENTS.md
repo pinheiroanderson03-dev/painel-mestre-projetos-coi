@@ -149,3 +149,166 @@ Formato obrigatório:
 5. Resumo da alteração
 
 Somente após aprovação do usuário realizar a alteração.
+
+## Modo de uso diário pelo Anderson
+
+Este painel será atualizado a partir de informações enviadas em linguagem natural pelo Anderson, como:
+
+- e-mails recebidos;
+- mensagens de WhatsApp;
+- atas ou registros de reunião;
+- chamados CITSmartX;
+- informações de fornecedores;
+- decisões gerenciais;
+- atualizações de status;
+- incidentes;
+- novas demandas;
+- novos projetos;
+- prazos e entregas.
+
+O agente deve interpretar essas informações e organizar automaticamente no Painel Executivo COI.
+
+## Regra principal
+
+O agente nunca deve alterar arquivos, commitar, abrir PR ou publicar diretamente sem antes apresentar o entendimento e pedir aprovação explícita do Anderson.
+
+Antes de qualquer alteração, o agente deve responder com:
+
+1. Entendimento da informação recebida.
+2. Classificação:
+   - Novo projeto;
+   - Atualização de projeto existente;
+   - Nova demanda;
+   - Incidente;
+   - Pendência;
+   - Entrega concluída;
+   - Atualização de prazo;
+   - Atualização de status.
+3. Frente identificada:
+   - `CENTRAL DF`;
+   - `CENTRAL DE ATENDIMENTO`;
+   - `MDS`.
+4. Projeto impactado ou novo projeto sugerido.
+5. Campos que serão atualizados no `dados_painel_aura.json`.
+6. Se haverá ou não alteração no `index.html`.
+7. Se haverá ou não alteração no `README.md`.
+8. Validações que serão executadas.
+9. Pergunta obrigatória:
+   "Posso aplicar essa atualização e criar a branch de correção?"
+
+Somente após o Anderson responder positivamente, o agente poderá:
+
+1. Criar branch.
+2. Atualizar os arquivos necessários.
+3. Validar JSON.
+4. Testar o carregamento local do painel.
+5. Verificar console.
+6. Apresentar resumo do diff.
+7. Criar commit.
+8. Abrir Pull Request.
+9. Aguardar nova aprovação para merge.
+
+## Regra de validação final
+
+Mesmo após aplicar as alterações, o agente deve apresentar uma validação final antes da publicação na `main`.
+
+A validação final deve conter:
+
+- Arquivos modificados;
+- Resumo do diff;
+- Status do JSON;
+- Resultado do teste local;
+- Resultado do console;
+- Quantidade de projetos por frente;
+- Métricas calculadas do dashboard;
+- Pendências atualizadas;
+- Entregas próximas atualizadas;
+- Confirmação de que não há datas futuras marcadas como concluídas;
+- Confirmação de que não há alteração de layout não solicitada.
+
+O agente deve perguntar:
+
+"Posso abrir o PR para revisão?"
+
+Depois que o PR estiver aberto, o agente deve perguntar:
+
+"Posso fazer o merge na main?"
+
+O merge só poderá ser feito após aprovação explícita do Anderson.
+
+## Como interpretar informações soltas
+
+Quando o Anderson enviar um texto livre, o agente deve:
+
+1. Ler todo o contexto.
+2. Identificar nomes de pessoas, áreas, datas, sistemas e entregas.
+3. Verificar se já existe projeto correspondente no `dados_painel_aura.json`.
+4. Se existir projeto, propor atualização.
+5. Se não existir projeto, sugerir criação de novo projeto.
+6. Se houver falha, indisponibilidade ou problema operacional, sugerir registro como incidente.
+7. Se houver entrega encerrada, sugerir tarefa concluída.
+8. Se houver solicitação sem projeto formal, sugerir demanda.
+9. Se houver prazo, atualizar próximas entregas e pendências.
+10. Nunca duplicar projeto sem verificar se já existe item semelhante.
+
+## Padrão de resposta antes de alterar
+
+Sempre responder neste formato:
+
+### Entendimento
+
+[Resumo do que foi compreendido]
+
+### Classificação
+
+[Projeto / Atualização / Demanda / Incidente / Pendência / Entrega concluída]
+
+### Frente
+
+[CENTRAL DF / CENTRAL DE ATENDIMENTO / MDS]
+
+### Projeto impactado
+
+[Nome do projeto existente ou sugestão de novo projeto]
+
+### Alterações propostas
+
+- [item 1]
+- [item 2]
+- [item 3]
+
+### Arquivos impactados
+
+- `dados_painel_aura.json`
+- `index.html`, se aplicável
+- `README.md`, se aplicável
+
+### Validações previstas
+
+- JSON válido;
+- painel carregando;
+- console sem erro;
+- métricas coerentes;
+- datas coerentes;
+- sem alteração indevida de layout.
+
+### Confirmação obrigatória
+
+Posso aplicar essa atualização e criar a branch de correção?
+
+## Regras de segurança operacional
+
+- Nunca alterar a `main` diretamente.
+- Nunca fazer merge sem aprovação.
+- Nunca alterar layout sem solicitação.
+- Nunca apagar histórico sem autorização.
+- Nunca remover arquivos antigos sem autorização.
+- Nunca alterar nomes de projetos sem validação.
+- Nunca criar duplicidade de projeto.
+- Nunca marcar data futura como concluída.
+- Nunca deixar métricas manuais divergentes do conteúdo real.
+- Sempre preservar o padrão visual atual do painel, salvo pedido contrário.
+
+## Objetivo do comportamento do agente
+
+O agente deve atuar como apoio operacional de PMO do Anderson, interpretando informações brutas do dia a dia e transformando em registros estruturados no Painel Executivo COI, mantendo governança, validação e rastreabilidade por branch, commit e Pull Request.
