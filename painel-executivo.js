@@ -8,18 +8,42 @@ const safe = (v) => texto(v).replaceAll('&','&amp;').replaceAll('<','&lt;').repl
 const badge = (txt, cls) => txt ? `<span class="badge ${cls}">${safe(txt)}</span>` : '';
 const metric = (nome, valor) => `<div class="metric"><span>${safe(nome)}</span><strong>${safe(valor || 0)}</strong></div>`;
 const lista = (arr) => arr && arr.length ? `<ul>${arr.map(x => `<li>${safe(x)}</li>`).join('')}</ul>` : '<p class="empty">Sem atividades registradas.</p>';
+function renomearReferencias(data, antigo, novo){
+  const trocar = (obj, campos) => campos.forEach(c => { if(obj && obj[c] === antigo) obj[c] = novo; });
+  (data.tarefasConcluidas || []).forEach(x => trocar(x, ['projeto']));
+  (data.pendencias || []).forEach(x => trocar(x, ['projeto']));
+  (data.prazos || []).forEach(x => trocar(x, ['projeto']));
+  const pe = data.proximasEntregas || {};
+  ['proximos15Dias','emAndamento','concluidosRecentemente'].forEach(k => (pe[k] || []).forEach(x => trocar(x, ['projeto'])));
+}
 function aplicarExtras(data, extra){
   extra = extra || {};
   data.projetos = data.projetos || [];
   data.tarefasConcluidas = data.tarefasConcluidas || [];
+  data.pendencias = data.pendencias || [];
   data.proximasEntregas = data.proximasEntregas || {};
   data.proximasEntregas.proximos15Dias = data.proximasEntregas.proximos15Dias || [];
   data.proximasEntregas.concluidosRecentemente = data.proximasEntregas.concluidosRecentemente || [];
+  (extra.ajustesProjetos || []).forEach(a => {
+    const p = data.projetos.find(x => x.nome === a.nomeOriginal || x.nome === a.nome);
+    if(p){
+      const antigo = p.nome;
+      if(a.nome) p.nome = a.nome;
+      if(a.objetivo) p.objetivo = a.objetivo;
+      if(a.ultimaAtualizacao) p.ultimaAtualizacao = a.ultimaAtualizacao;
+      p.atividades = p.atividades || [];
+      (a.atividadesAdicionar || []).forEach(at => { if(!p.atividades.includes(at)) p.atividades.push(at); });
+      if(antigo !== p.nome) renomearReferencias(data, antigo, p.nome);
+    }
+  });
   (extra.projetos || []).forEach(p => { if(!data.projetos.some(x => x.nome === p.nome)) data.projetos.push(p); });
   (extra.tarefasConcluidas || []).forEach(t => { if(!data.tarefasConcluidas.some(x => x.projeto === t.projeto && x.data === t.data && x.tarefa === t.tarefa)) data.tarefasConcluidas.push(t); });
-  (extra.concluidosRecentemente || []).forEach(e => { if(!data.proximasEntregas.concluidosRecentemente.some(x => x.projeto === e.projeto && x.data === e.data)) data.proximasEntregas.concluidosRecentemente.unshift(e); });
+  (extra.pendencias || []).forEach(p => { if(!data.pendencias.some(x => x.projeto === p.projeto && x.pendencia === p.pendencia)) data.pendencias.push(p); });
+  (extra.concluidosRecentemente || []).forEach(e => { if(!data.proximasEntregas.concluidosRecentemente.some(x => x.projeto === e.projeto && x.data === e.data && x.entrega === e.entrega)) data.proximasEntregas.concluidosRecentemente.unshift(e); });
   data.proximasEntregas.proximos15Dias = data.proximasEntregas.proximos15Dias.filter(x => !(x.data === '03/06/2026' && texto(x.entrega).includes('AURA de disparos')));
-  if(data.frentes){ const f = data.frentes.find(x => x.nome === 'CENTRAL DF'); if(f) f.quantidade = data.projetos.filter(p => p.area === 'CENTRAL DF').length; }
+  if(data.frentes){ const c = data.frentes.find(x => x.nome === 'CENTRAL DF'); if(c) c.quantidade = data.projetos.filter(p => p.area === 'CENTRAL DF').length; const m = data.frentes.find(x => x.nome === 'MDS'); if(m) m.quantidade = data.projetos.filter(p => p.area === 'MDS').length; }
+  const compJunho = (data.competencias || []).find(c => c.mes === 'Junho/2026');
+  if(compJunho && !compJunho.atividades.some(x => x.includes('Ouvsuas'))){ compJunho.atividades.push('Apresentação de handoff do Sistema de Ouvidoria (Ouvsuas) realizada em 02/06/2026 para a equipe TD e pendência de definição do prazo para início do projeto.'); }
   if(extra.versaoExtra) data.versao = extra.versaoExtra;
   if(extra.ultimaAtualizacaoExtra) data.ultimaAtualizacao = extra.ultimaAtualizacaoExtra;
   if(extra.observacaoExtra) data.observacao = extra.observacaoExtra;
