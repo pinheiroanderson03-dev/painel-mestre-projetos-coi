@@ -1,0 +1,57 @@
+{
+  "versaoExtra": "10.0",
+  "ultimaAtualizacaoExtra": "2026-06-03",
+  "observacaoExtra": "Inclusão do novo projeto CENTRAL DF - Plataforma Inteligente de Campanhas Digitais AURA e conclusão da reunião de apresentação em 03/06/2026 às 10h30.",
+  "projetos": [
+    {
+      "nome": "CENTRAL DF - Plataforma Inteligente de Campanhas Digitais AURA",
+      "area": "CENTRAL DF",
+      "responsavel": "Anderson Pinheiro / Bruno Nakakura Alves - Equipe COI, Equipe IA, Equipe TD e Equipe AURA",
+      "status": "Em andamento",
+      "prioridade": "Alta",
+      "inicio": "Junho/2026",
+      "ultimaAtualizacao": "03/06/2026",
+      "previsaoConclusao": "Agosto/2026",
+      "competencia": "Junho/2026",
+      "progresso": "25%",
+      "categoria": "Comunicação Omnichannel / WhatsApp / Voicebot / Automação / Inteligência Artificial",
+      "objetivo": "Implantar uma plataforma corporativa de comunicação digital baseada na solução AURA, permitindo o gerenciamento centralizado de campanhas digitais, integração com APIs corporativas, utilização de Inteligência Artificial para automação de fluxos, monitoramento operacional, governança de campanhas e futura integração omnichannel entre WhatsApp, Voicebot e URA.",
+      "atividades": [
+        "✅ 03/06/2026 10h30 - Reunião de apresentação da plataforma AURA de disparos concluída conforme programado",
+        "✅ Apresentação da Plataforma AURA",
+        "✅ Demonstração da arquitetura da solução",
+        "✅ Demonstração dos dashboards operacionais e executivos",
+        "✅ Demonstração do módulo de campanhas e templates",
+        "✅ Demonstração do assistente de IA para construção de workflows",
+        "✅ Demonstração da integração com Meta WhatsApp, CitSmart e Keycloak",
+        "✅ Demonstração dos recursos de auditoria, rastreabilidade e controle LGPD",
+        "✅ Validação da estratégia de homologação por meio de piloto assistido",
+        "✅ Definição do roadmap inicial do projeto",
+        "⏳ Fase 1 - Piloto assistido com mailing de teste em produção",
+        "⏳ Fase 2 - Integração via API, com caso inicial Campanha Bombeiros",
+        "⏳ Fase 3 - Campanhas de alta volumetria",
+        "⏳ Fase 4 - Integração Omnichannel WhatsApp + Voicebot",
+        "⏳ Fase 5 - Plataforma Inteligente de Comunicação Digital"
+      ]
+    }
+  ],
+  "tarefasConcluidas": [
+    {
+      "mes": "Junho/2026",
+      "data": "03/06/2026 10:30",
+      "projeto": "CENTRAL DF - Plataforma Inteligente de Campanhas Digitais AURA",
+      "tarefa": "Reunião de apresentação da plataforma AURA de disparos concluída conforme programado, com demonstração da solução, dashboards, campanhas, templates, IA, integrações, auditoria, LGPD e roadmap inicial.",
+      "responsavel": "Equipe COI / AURA",
+      "status": "Concluído"
+    }
+  ],
+  "concluidosRecentemente": [
+    {
+      "data": "03/06/2026",
+      "projeto": "CENTRAL DF - Plataforma Inteligente de Campanhas Digitais AURA",
+      "entrega": "Reunião de apresentação da plataforma AURA de disparos concluída às 10h30, com definição do roadmap inicial do projeto.",
+      "responsavel": "Equipe COI / AURA",
+      "status": "Concluído"
+    }
+  ]
+}
