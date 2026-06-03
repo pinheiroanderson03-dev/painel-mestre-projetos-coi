@@ -1,13 +1,19 @@
 {
-  "versaoExtra": "10.1",
+  "versaoExtra": "10.2",
   "ultimaAtualizacaoExtra": "2026-06-03",
-  "observacaoExtra": "Atualização do projeto MDS - Formulário de Ouvidoria para Sistema de Ouvidoria (Ouvsuas), inclusão do handoff de 02/06 para equipe TD e registro da pendência de prazo para início do projeto pela equipe TD.",
+  "observacaoExtra": "Melhoria da descrição da apresentação do Sistema de Ouvidoria (Ouvsuas) realizada em 29/05/2026 para a Diretoria de Gestão de Portfólio de Produtos.",
   "ajustesProjetos": [
     {
       "nomeOriginal": "MDS - Formulário de Ouvidoria",
       "nome": "MDS - Sistema de Ouvidoria (Ouvsuas)",
       "objetivo": "Acompanhar a evolução do Sistema de Ouvidoria (Ouvsuas) para o MDS, incluindo handoff técnico, alinhamento com a equipe TD e definição do prazo de início do projeto.",
       "ultimaAtualizacao": "03/06/2026",
+      "atividadesSubstituir": [
+        {
+          "de": "✅ Apresentação do Sistema Formulário de Ouvidoria realizada em 29/05/2026",
+          "para": "✅ 29/05/2026 - Apresentação do Sistema de Ouvidoria (Ouvsuas) realizada para a Diretoria de Gestão de Portfólio de Produtos, com demonstração da solução, contextualização do escopo funcional e alinhamento inicial sobre a evolução do projeto no âmbito do MDS"
+        }
+      ],
       "atividadesAdicionar": [
         "✅ 02/06/2026 - Apresentação de handoff realizada para a equipe TD",
         "⏳ Definição do prazo para início do projeto pela equipe TD"
@@ -47,6 +53,15 @@
       ]
     }
   ],
+  "tarefasConcluidasSubstituir": [
+    {
+      "projeto": "MDS - Sistema de Ouvidoria (Ouvsuas)",
+      "data": "29/05/2026 11:00 - 11:30",
+      "tarefa": "Apresentação do Sistema de Ouvidoria (Ouvsuas) realizada para a Diretoria de Gestão de Portfólio de Produtos, com demonstração da solução, contextualização do escopo funcional e alinhamento inicial sobre a evolução do projeto no âmbito do MDS.",
+      "responsavel": "Anderson Pinheiro / Daiane",
+      "status": "Concluído"
+    }
+  ],
   "tarefasConcluidas": [
     {
       "mes": "Junho/2026",
@@ -80,6 +95,13 @@
       "projeto": "CENTRAL DF - Plataforma Inteligente de Campanhas Digitais AURA",
       "entrega": "Reunião de apresentação da plataforma AURA de disparos concluída às 10h30, com definição do roadmap inicial do projeto.",
       "responsavel": "Equipe COI / AURA",
+      "status": "Concluído"
+    },
+    {
+      "data": "29/05/2026",
+      "projeto": "MDS - Sistema de Ouvidoria (Ouvsuas)",
+      "entrega": "Apresentação do Sistema de Ouvidoria (Ouvsuas) realizada para a Diretoria de Gestão de Portfólio de Produtos.",
+      "responsavel": "Anderson Pinheiro / Daiane",
       "status": "Concluído"
     },
     {
