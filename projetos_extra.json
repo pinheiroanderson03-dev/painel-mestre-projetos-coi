@@ -1,7 +1,19 @@
 {
-  "versaoExtra": "10.0",
+  "versaoExtra": "10.1",
   "ultimaAtualizacaoExtra": "2026-06-03",
-  "observacaoExtra": "Inclusão do novo projeto CENTRAL DF - Plataforma Inteligente de Campanhas Digitais AURA e conclusão da reunião de apresentação em 03/06/2026 às 10h30.",
+  "observacaoExtra": "Atualização do projeto MDS - Formulário de Ouvidoria para Sistema de Ouvidoria (Ouvsuas), inclusão do handoff de 02/06 para equipe TD e registro da pendência de prazo para início do projeto pela equipe TD.",
+  "ajustesProjetos": [
+    {
+      "nomeOriginal": "MDS - Formulário de Ouvidoria",
+      "nome": "MDS - Sistema de Ouvidoria (Ouvsuas)",
+      "objetivo": "Acompanhar a evolução do Sistema de Ouvidoria (Ouvsuas) para o MDS, incluindo handoff técnico, alinhamento com a equipe TD e definição do prazo de início do projeto.",
+      "ultimaAtualizacao": "03/06/2026",
+      "atividadesAdicionar": [
+        "✅ 02/06/2026 - Apresentação de handoff realizada para a equipe TD",
+        "⏳ Definição do prazo para início do projeto pela equipe TD"
+      ]
+    }
+  ],
   "projetos": [
     {
       "nome": "CENTRAL DF - Plataforma Inteligente de Campanhas Digitais AURA",
@@ -43,6 +55,23 @@
       "tarefa": "Reunião de apresentação da plataforma AURA de disparos concluída conforme programado, com demonstração da solução, dashboards, campanhas, templates, IA, integrações, auditoria, LGPD e roadmap inicial.",
       "responsavel": "Equipe COI / AURA",
       "status": "Concluído"
+    },
+    {
+      "mes": "Junho/2026",
+      "data": "02/06/2026",
+      "projeto": "MDS - Sistema de Ouvidoria (Ouvsuas)",
+      "tarefa": "Apresentação de handoff realizada para a equipe TD",
+      "responsavel": "Anderson Pinheiro / Daiane / Equipe TD",
+      "status": "Concluído"
+    }
+  ],
+  "pendencias": [
+    {
+      "prazo": "A definir",
+      "pendencia": "Definir prazo para início do projeto Sistema de Ouvidoria (Ouvsuas) pela equipe TD",
+      "projeto": "MDS - Sistema de Ouvidoria (Ouvsuas)",
+      "responsavel": "Equipe TD / Anderson Pinheiro / Daiane",
+      "status": "Pendente"
     }
   ],
   "concluidosRecentemente": [
@@ -51,6 +80,13 @@
       "projeto": "CENTRAL DF - Plataforma Inteligente de Campanhas Digitais AURA",
       "entrega": "Reunião de apresentação da plataforma AURA de disparos concluída às 10h30, com definição do roadmap inicial do projeto.",
       "responsavel": "Equipe COI / AURA",
+      "status": "Concluído"
+    },
+    {
+      "data": "02/06/2026",
+      "projeto": "MDS - Sistema de Ouvidoria (Ouvsuas)",
+      "entrega": "Apresentação de handoff realizada para a equipe TD.",
+      "responsavel": "Anderson Pinheiro / Daiane / Equipe TD",
       "status": "Concluído"
     }
   ]
