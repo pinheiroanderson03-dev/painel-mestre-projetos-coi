@@ -1,7 +1,7 @@
 {
-  "versaoExtra": "10.2",
+  "versaoExtra": "10.3",
   "ultimaAtualizacaoExtra": "2026-06-03",
-  "observacaoExtra": "Melhoria da descrição da apresentação do Sistema de Ouvidoria (Ouvsuas) realizada em 29/05/2026 para a Diretoria de Gestão de Portfólio de Produtos.",
+  "observacaoExtra": "Inclusão do novo projeto MDS - Gestão de Portfólio de Produtos - Etapa de embarque de produtos, contemplando as apresentações do Sistema de Ouvidoria (Ouvsuas) e do produto WFM.",
   "ajustesProjetos": [
     {
       "nomeOriginal": "MDS - Formulário de Ouvidoria",
@@ -51,6 +51,29 @@
         "⏳ Fase 4 - Integração Omnichannel WhatsApp + Voicebot",
         "⏳ Fase 5 - Plataforma Inteligente de Comunicação Digital"
       ]
+    },
+    {
+      "nome": "MDS - Gestão de Portfólio de Produtos - Etapa de embarque de produtos",
+      "area": "MDS",
+      "responsavel": "Daiane / Anderson Pinheiro / Equipe Produtos / Vinicius Bastos / Rafael Carvalho",
+      "status": "Em andamento",
+      "prioridade": "Média",
+      "inicio": "29/05/2026",
+      "ultimaAtualizacao": "03/06/2026",
+      "previsaoConclusao": "A definir",
+      "competencia": "Junho/2026",
+      "progresso": "30%",
+      "categoria": "Gestão de Portfólio / Embarque de Produtos / Avaliação de Produtos",
+      "objetivo": "Conduzir a etapa de embarque e avaliação de novos produtos no âmbito do MDS, apoiando a Diretoria de Gestão de Portfólio de Produtos na apresentação, análise, priorização e acompanhamento de soluções com potencial de evolução para o portfólio.",
+      "atividades": [
+        "✅ 29/05/2026 11:00 - 11:30 - Apresentação do Sistema Formulário de Ouvidoria realizada para a Diretoria de Gestão de Portfólio de Produtos",
+        "✅ 02/06/2026 16:00 - Apresentação do produto WFM (gerenciamento da força de trabalho) realizada para avaliação da equipe de novos produtos",
+        "⏳ Avaliação técnica e funcional dos produtos apresentados",
+        "⏳ Definição dos critérios de embarque de produtos no portfólio",
+        "⏳ Priorização dos produtos com potencial de continuidade",
+        "⏳ Consolidação dos encaminhamentos com Vinicius Bastos e Rafael Carvalho",
+        "⏳ Definição do roadmap de evolução dos produtos avaliados"
+      ]
     }
   ],
   "tarefasConcluidasSubstituir": [
@@ -78,6 +101,22 @@
       "tarefa": "Apresentação de handoff realizada para a equipe TD",
       "responsavel": "Anderson Pinheiro / Daiane / Equipe TD",
       "status": "Concluído"
+    },
+    {
+      "mes": "Maio/2026",
+      "data": "29/05/2026 11:00 - 11:30",
+      "projeto": "MDS - Gestão de Portfólio de Produtos - Etapa de embarque de produtos",
+      "tarefa": "Apresentação do Sistema Formulário de Ouvidoria realizada para a Diretoria de Gestão de Portfólio de Produtos",
+      "responsavel": "Daiane / Anderson Pinheiro / Equipe Produtos / Vinicius Bastos / Rafael Carvalho",
+      "status": "Concluído"
+    },
+    {
+      "mes": "Junho/2026",
+      "data": "02/06/2026 16:00",
+      "projeto": "MDS - Gestão de Portfólio de Produtos - Etapa de embarque de produtos",
+      "tarefa": "Apresentação do produto WFM (gerenciamento da força de trabalho) realizada para avaliação da equipe de novos produtos",
+      "responsavel": "Daiane / Anderson Pinheiro / Equipe Produtos / Vinicius Bastos / Rafael Carvalho",
+      "status": "Concluído"
     }
   ],
   "pendencias": [
@@ -86,6 +125,13 @@
       "pendencia": "Definir prazo para início do projeto Sistema de Ouvidoria (Ouvsuas) pela equipe TD",
       "projeto": "MDS - Sistema de Ouvidoria (Ouvsuas)",
       "responsavel": "Equipe TD / Anderson Pinheiro / Daiane",
+      "status": "Pendente"
+    },
+    {
+      "prazo": "A definir",
+      "pendencia": "Definir critérios e próximos passos para embarque dos produtos avaliados no portfólio do MDS",
+      "projeto": "MDS - Gestão de Portfólio de Produtos - Etapa de embarque de produtos",
+      "responsavel": "Vinicius Bastos / Rafael Carvalho / Daiane / Anderson Pinheiro",
       "status": "Pendente"
     }
   ],
@@ -109,6 +155,20 @@
       "projeto": "MDS - Sistema de Ouvidoria (Ouvsuas)",
       "entrega": "Apresentação de handoff realizada para a equipe TD.",
       "responsavel": "Anderson Pinheiro / Daiane / Equipe TD",
+      "status": "Concluído"
+    },
+    {
+      "data": "29/05/2026",
+      "projeto": "MDS - Gestão de Portfólio de Produtos - Etapa de embarque de produtos",
+      "entrega": "Apresentação do Sistema Formulário de Ouvidoria realizada para a Diretoria de Gestão de Portfólio de Produtos.",
+      "responsavel": "Daiane / Anderson Pinheiro / Equipe Produtos / Vinicius Bastos / Rafael Carvalho",
+      "status": "Concluído"
+    },
+    {
+      "data": "02/06/2026",
+      "projeto": "MDS - Gestão de Portfólio de Produtos - Etapa de embarque de produtos",
+      "entrega": "Apresentação do produto WFM (gerenciamento da força de trabalho) realizada para avaliação da equipe de novos produtos.",
+      "responsavel": "Daiane / Anderson Pinheiro / Equipe Produtos / Vinicius Bastos / Rafael Carvalho",
       "status": "Concluído"
     }
   ]
