@@ -10,31 +10,11 @@
 </head>
 <body>
 <main class="shell">
-<header class="hero">
-<h1>Linha do Tempo Executiva COI</h1>
-<p>Visão mensal consolidada de projetos, tarefas, demandas, incidentes, pendências e entregas do painel executivo.</p>
-<div class="version-line">
-<span class="version-pill">Linha do Tempo v1.1</span>
-<span class="version-pill" id="jsonVersion">Base JSON: carregando...</span>
-<span class="version-pill" id="jsonUpdate">Atualização: carregando...</span>
-<span class="version-pill">projetos_extra.json integrado</span>
-</div>
-</header>
-<div class="toolbar">
-<div class="field"><label for="mes">Competência</label><select id="mes"></select></div>
-<div class="field"><label for="area">Frente</label><select id="area"><option value="TODAS">Todas</option></select></div>
-<div class="field"><label for="tipo">Tipo</label><select id="tipo"><option value="TODOS">Todos</option></select></div>
-<div class="field"><label for="status">Status</label><select id="status"><option value="TODOS">Todos</option></select></div>
-<div class="field"><label for="busca">Pesquisar</label><input id="busca" type="search" placeholder="WhatsApp, AIOps, Gupshup, e-GDF..."></div>
-<div class="actions">
-<button class="btn" type="button" onclick="window.print()">Imprimir / PDF</button>
-<a class="btn secondary" href="index.html">Voltar ao Painel</a>
-<a class="btn secondary" href="relatorio-mensal.html">Relatório Mensal</a>
-</div>
-</div>
+<header class="hero"><h1>Linha do Tempo Executiva COI</h1><p>Visão mensal consolidada de projetos, tarefas, demandas, incidentes, pendências e entregas do painel executivo.</p><div class="version-line"><span class="version-pill">Linha do Tempo v2.0</span><span class="version-pill" id="jsonVersion">Base JSON: carregando...</span><span class="version-pill" id="jsonUpdate">Atualização: carregando...</span><span class="version-pill">Filtro estrito por competência</span></div></header>
+<div class="toolbar"><div class="field"><label for="mes">Competência</label><select id="mes"></select></div><div class="field"><label for="area">Frente</label><select id="area"><option value="TODAS">Todas</option></select></div><div class="field"><label for="tipo">Tipo</label><select id="tipo"><option value="TODOS">Todos</option></select></div><div class="field"><label for="status">Status</label><select id="status"><option value="TODOS">Todos</option></select></div><div class="field"><label for="busca">Pesquisar</label><input id="busca" type="search" placeholder="WhatsApp, AIOps, Gupshup, e-GDF..."></div><div class="actions"><button class="btn" type="button" onclick="window.print()">Imprimir / PDF</button><a class="btn secondary" href="index.html">Voltar ao Painel</a><a class="btn secondary" href="relatorio-mensal.html">Relatório Mensal</a></div></div>
 <div id="app" class="note">Carregando dados...</div>
-<footer class="footer">Painel Executivo COI - linha do tempo gerada automaticamente a partir da base oficial e do arquivo complementar de projetos.</footer>
+<footer class="footer">Painel Executivo COI - linha do tempo gerada com filtro estrito por competência.</footer>
 </main>
-<script src="linha-do-tempo.js"></script>
+<script src="linha-do-tempo-v2.js"></script>
 </body>
 </html>
