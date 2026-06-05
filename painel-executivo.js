@@ -1,34 +1,111 @@
-let DATA=null, filtroArea='TODAS', filtroStatus='ABERTOS';
-const $=id=>document.getElementById(id);
-const txt=v=>v===undefined||v===null?'':String(v);
-const norm=s=>txt(s).replace(/\bDaiana\b/g,'Daiane Ribeiro').replace(/\bDaiane\b(?!\s+Ribeiro)/g,'Daiane Ribeiro');
-const esc=v=>norm(v).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
-const badge=(v,c)=>v?`<span class="badge ${c}">${esc(v)}</span>`:'';
-const metric=(n,v)=>`<div class="metric"><span>${esc(n)}</span><strong>${esc(v||0)}</strong></div>`;
-const lista=a=>a&&a.length?`<ul>${a.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`:'<p class="empty">Sem atividades registradas.</p>';
-function isConcluido(p){return /concluído|concluido|finalizado|finalizada/i.test(txt(p.status))}
-function prioridadeClasse(p){return txt(p).toLowerCase().includes('alta')?'alta':'media'}
-function prioridadeOrdem(p){let v=txt(p.prioridade).toLowerCase();if(['CENTRAL DF - Validação do Painel AIOps','CENTRAL DF - Painel Inteligente do Portal do Cidadão – Gestão de Calçadas','CENTRAL DE ATENDIMENTO - URA Inteligente'].includes(txt(p.nome)))v='média';if(v.includes('alta'))return 1;if(v.includes('média')||v.includes('media'))return 2;if(v.includes('baixa'))return 3;return 9}
-function ordemArea(a){return {'CENTRAL DF':1,'CENTRAL DE ATENDIMENTO':2,'MDS':3,'COI':4,'OUTROS':99}[a]||90}
-function pct(p){let m=txt(p.progresso).match(/\d+/);return m?Math.min(100,parseInt(m[0],10)):null}
-function progress(p){let v=pct(p);return v===null?'':`<div class="progress-wrap"><div class="progress-bar" style="width:${v}%"></div></div><div class="meta">Progresso: ${v}%</div>`}
-function renomear(data,antigo,novo){['tarefasConcluidas','pendencias','prazos'].forEach(k=>(data[k]||[]).forEach(x=>{if(x.projeto===antigo)x.projeto=novo}));let pe=data.proximasEntregas||{};['proximos15Dias','emAndamento','concluidosRecentemente'].forEach(k=>(pe[k]||[]).forEach(x=>{if(x.projeto===antigo)x.projeto=novo}))}
-function aplicarExtras(data,extra){extra=extra||{};data.projetos=data.projetos||[];data.tarefasConcluidas=data.tarefasConcluidas||[];data.pendencias=data.pendencias||[];data.proximasEntregas=data.proximasEntregas||{};data.proximasEntregas.proximos15Dias=data.proximasEntregas.proximos15Dias||[];data.proximasEntregas.emAndamento=data.proximasEntregas.emAndamento||[];data.proximasEntregas.concluidosRecentemente=data.proximasEntregas.concluidosRecentemente||[];
-(extra.ajustesProjetos||[]).forEach(a=>{let p=data.projetos.find(x=>x.nome===a.nomeOriginal||x.nome===a.nome);if(!p)return;let antigo=p.nome;if(a.nome)p.nome=a.nome;if(a.objetivo)p.objetivo=a.objetivo;if(a.ultimaAtualizacao)p.ultimaAtualizacao=a.ultimaAtualizacao;if(a.area)p.area=a.area;if(a.categoria)p.categoria=a.categoria;p.atividades=p.atividades||[];(a.atividadesSubstituir||[]).forEach(s=>p.atividades=p.atividades.map(x=>x===s.de?s.para:x));(a.atividadesRemover||[]).forEach(r=>p.atividades=p.atividades.filter(x=>x!==r));(a.atividadesAdicionar||[]).forEach(x=>{if(!p.atividades.includes(x))p.atividades.push(x)});if(antigo!==p.nome)renomear(data,antigo,p.nome)});
-(extra.projetos||[]).forEach(p=>{if(!data.projetos.some(x=>x.nome===p.nome))data.projetos.push(p)});
-(extra.tarefasConcluidasRemover||[]).forEach(r=>data.tarefasConcluidas=data.tarefasConcluidas.filter(x=>!(x.projeto===r.projeto&&(!r.data||x.data===r.data))));
-(extra.tarefasConcluidas||[]).forEach(t=>{if(!data.tarefasConcluidas.some(x=>x.projeto===t.projeto&&x.data===t.data&&x.tarefa===t.tarefa))data.tarefasConcluidas.push(t)});
-(extra.pendencias||[]).forEach(p=>{if(!data.pendencias.some(x=>x.projeto===p.projeto&&x.pendencia===p.pendencia))data.pendencias.push(p)});
-(extra.concluidosRecentementeRemover||[]).forEach(r=>data.proximasEntregas.concluidosRecentemente=data.proximasEntregas.concluidosRecentemente.filter(x=>!(x.projeto===r.projeto&&(!r.data||x.data===r.data))));
-(extra.concluidosRecentemente||[]).forEach(e=>{if(!data.proximasEntregas.concluidosRecentemente.some(x=>x.projeto===e.projeto&&x.data===e.data&&x.entrega===e.entrega))data.proximasEntregas.concluidosRecentemente.unshift(e)});
-if(extra.versaoExtra)data.versao=extra.versaoExtra;if(extra.ultimaAtualizacaoExtra)data.ultimaAtualizacao=extra.ultimaAtualizacaoExtra;if(extra.observacaoExtra)data.observacao=extra.observacaoExtra;
-let areas=[...new Set(data.projetos.map(p=>p.area||'OUTROS'))].sort((a,b)=>ordemArea(a)-ordemArea(b)||a.localeCompare(b));data.frentes=areas.map(a=>({nome:a,quantidade:data.projetos.filter(p=>(p.area||'OUTROS')===a).length}));return data}
-function calc(data){let pe=data.proximasEntregas||{}, inc=data.incidentes||[];return Object.assign({},data.dashboard||{},{projetosAtivos:(data.projetos||[]).filter(p=>!isConcluido(p)).length,projetosTotal:(data.projetos||[]).length,tarefasConcluidas:(data.tarefasConcluidas||[]).length,demandasConcluidas:(data.demandasConcluidas||[]).length,incidentesAbertos:inc.filter(x=>!isConcluido(x)).length,pendenciasExecutivas:(data.pendencias||[]).length,entregasProximas:(pe.proximos15Dias||[]).length+(pe.emAndamento||[]).length+(pe.concluidosRecentemente||[]).length})}
-function cardProjeto(p){let pr=txt(p.prioridade);if(['CENTRAL DF - Validação do Painel AIOps','CENTRAL DF - Painel Inteligente do Portal do Cidadão – Gestão de Calçadas','CENTRAL DE ATENDIMENTO - URA Inteligente'].includes(txt(p.nome)))pr='Média';return `<article class="card"><h3>${esc(p.nome)}</h3><div class="meta">Responsável: ${esc(p.responsavel)}${p.inicio?' | Início: '+esc(p.inicio):''}${p.previsaoConclusao?' | Previsão: '+esc(p.previsaoConclusao):''}</div>${progress(p)}<p>${esc(p.objetivo||'')}</p>${badge(pr,prioridadeClasse(pr))}${badge(p.status,'status')}${badge(p.competencia,'status')}<details><summary>Ver detalhes</summary>${lista(p.atividades)}</details></article>`}
-function renderProjetos(arr){let base=(arr||[]).filter(p=>filtroStatus==='TODOS'||(filtroStatus==='CONCLUIDOS'?isConcluido(p):!isConcluido(p))).filter(p=>filtroArea==='TODAS'||p.area===filtroArea);let grupos={};base.forEach(p=>{let k=p.area||'OUTROS';(grupos[k]=grupos[k]||[]).push(p)});Object.keys(grupos).forEach(k=>grupos[k].sort((a,b)=>prioridadeOrdem(a)-prioridadeOrdem(b)||txt(a.nome).localeCompare(txt(b.nome))));let areasTodas=[...new Set((arr||[]).map(p=>p.area||'OUTROS'))].sort((a,b)=>ordemArea(a)-ordemArea(b)||a.localeCompare(b));let areas=Object.keys(grupos).sort((a,b)=>ordemArea(a)-ordemArea(b)||a.localeCompare(b));let filtro=`<div class="toolbar"><label>Filtrar frente:</label><select id="areaFiltro"><option value="TODAS">Todas</option>${areasTodas.map(a=>`<option value="${esc(a)}" ${filtroArea===a?'selected':''}>${esc(a)}</option>`).join('')}</select><label>Status:</label><select id="statusProjetoFiltro"><option value="ABERTOS" ${filtroStatus==='ABERTOS'?'selected':''}>Abertos</option><option value="CONCLUIDOS" ${filtroStatus==='CONCLUIDOS'?'selected':''}>Concluídos</option><option value="TODOS" ${filtroStatus==='TODOS'?'selected':''}>Todos</option></select></div>`;return `<section id="projetos" class="section"><h2>Projetos por Frente</h2><p class="meta">Por padrão, são exibidos somente projetos em aberto. Projetos de prioridade alta aparecem primeiro.</p>${filtro}${areas.length?areas.map(a=>`<div class="area-panel"><div class="area-head"><h3>📁 ${esc(a)}</h3><span class="area-count">${grupos[a].length} projeto(s)</span></div><div class="project-grid">${grupos[a].map(cardProjeto).join('')}</div></div>`).join(''):'<p class="empty">Nenhum projeto para os filtros selecionados.</p>'}</section>`}
-function itensEntrega(arr){return (arr||[]).map(x=>`<div class="delivery-item"><b>${esc(x.data||'A definir')}</b><br>${esc(x.entrega||x.acao)}<div class="meta">${esc(x.projeto)}<br>Responsável: ${esc(x.responsavel)}</div>${badge(x.status,'status')}</div>`).join('')||'<p class="empty">Sem registros.</p>'}
-function renderEntregas(pe){pe=pe||{};return `<section id="entregas" class="section"><h2>📅 Próximas Entregas</h2><div class="delivery-grid"><div class="delivery-card red"><h3>🔴 Próximos 15 dias</h3>${itensEntrega(pe.proximos15Dias)}</div><div class="delivery-card yellow"><h3>🟡 Em andamento</h3>${itensEntrega(pe.emAndamento)}</div><div class="delivery-card green"><h3>🟢 Concluídos recentemente</h3>${itensEntrega(pe.concluidosRecentemente)}</div></div></section>`}
-function renderTarefas(arr){let grupos={};(arr||[]).forEach(t=>{let k=t.mes||'Sem mês';(grupos[k]=grupos[k]||[]).push(t)});return `<section id="tarefas" class="section"><h2>✅ Tarefas Concluídas</h2>${Object.keys(grupos).map(m=>`<h3>${esc(m)} <span class="badge ok">${grupos[m].length} tarefas</span></h3><div class="task-grid">${grupos[m].map(x=>`<article class="task-card"><h3>${esc(x.tarefa)}</h3><div class="meta"><b>Projeto:</b> ${esc(x.projeto)}<br><b>Data:</b> ${esc(x.data)}<br><b>Responsável:</b> ${esc(x.responsavel)}</div>${badge(x.status,'ok')}</article>`).join('')}</div>`).join('')||'<p class="empty">Sem tarefas registradas.</p>'}</section>`}
-function tabelaPendencias(rows){return `<section id="pendencias" class="section"><h2>Pendências Executivas</h2><div class="tablewrap"><table><thead><tr><th>Prazo</th><th>Pendência</th><th>Projeto</th><th>Responsável</th><th>Status</th></tr></thead><tbody>${(rows||[]).map(x=>`<tr><td>${esc(x.prazo)}</td><td>${esc(x.pendencia)}</td><td>${esc(x.projeto)}</td><td>${esc(x.responsavel)}</td><td>${badge(x.status,'status')}</td></tr>`).join('')}</tbody></table></div></section>`}
-function render(data){DATA=data;let d=data.dashboard||{};let html=`<div class="note"><b>Última atualização:</b> ${esc(data.ultimaAtualizacao)} &nbsp; | &nbsp; <b>Versão:</b> ${esc(data.versao)}<br>${esc(data.projetoBase||'')}${data.observacao?'<br><b>Observação:</b> '+esc(data.observacao):''}<br><b>Gerente MDS:</b> Daiane Ribeiro</div>`;html+=`<section id="dashboard" class="section"><h2>Dashboard Executivo</h2><div class="metrics">${metric('Projetos ativos',d.projetosAtivos)}${metric('Tarefas concluídas',d.tarefasConcluidas)}${metric('Atividades do mês',d.atividadesConcluidasMes)}${metric('Demandas concluídas',d.demandasConcluidas)}${metric('Incidentes abertos',d.incidentesAbertos)}${metric('Pendências executivas',d.pendenciasExecutivas)}</div><div class="front-grid">${(data.frentes||[]).map(f=>{let abertos=(data.projetos||[]).filter(p=>(p.area||'OUTROS')===f.nome&&!isConcluido(p)).length;return `<div class="front-card"><span>${esc(f.nome)}</span><strong>${abertos}</strong><div class="meta">aberto(s) / ${esc(f.quantidade)} total</div></div>`}).join('')}</div></section>`;html+=renderEntregas(data.proximasEntregas);html+=`<section id="cronograma" class="section"><h2>🗓️ Cronograma Executivo</h2><div class="timeline-grid">${(data.competencias||[]).map(c=>`<div class="timeline-card"><h3>${esc(c.mes)}</h3><strong>${(c.atividades||[]).length}</strong><span>${esc(c.status)} / atividade(s)</span></div>`).join('')}</div></section>`;html+=renderTarefas(data.tarefasConcluidas);html+=renderProjetos(data.projetos);html+=`<section id="competencias" class="section"><h2>Execução Mensal</h2><div class="grid">${(data.competencias||[]).map(c=>`<article class="panel"><h3>${esc(c.mes)} - ${esc(c.status)}</h3>${lista(c.atividades)}</article>`).join('')}</div></section>`;html+=`<section id="demandas" class="section"><h2>Demandas Concluídas</h2><div class="grid">${(data.demandasConcluidas||[]).map(x=>`<article class="card"><h3>${esc(x.titulo)}</h3><div class="meta">Responsável: ${esc(x.responsavel)} | Período: ${esc(x.periodo)}</div><p>${esc(x.resultado)}</p>${badge(x.status,'ok')}${badge(x.categoria,'status')}</article>`).join('')}</div></section>`;html+=`<section id="incidentes" class="section"><h2>Incidentes Operacionais</h2><div class="grid">${(data.incidentes||[]).map(x=>`<article class="card"><h3>${esc(x.titulo)}</h3><div class="meta">Sistema: ${esc(x.sistema)} | Responsável: ${esc(x.responsavel)} | Abertura: ${esc(x.abertura)}${x.encerramento?' | Encerramento: '+esc(x.encerramento):''}</div><p>${esc(x.resultado||x.causa||'')}</p>${badge(x.prioridade,prioridadeClasse(x.prioridade))}${badge(x.status,'status')}</article>`).join('')}</div></section>`;html+=tabelaPendencias(data.pendencias);$('app').className='';$('app').innerHTML=html;let af=$('areaFiltro'), sf=$('statusProjetoFiltro');if(af)af.onchange=()=>{filtroArea=af.value;render(DATA)};if(sf)sf.onchange=()=>{filtroStatus=sf.value;render(DATA)}}
-Promise.all([fetch('dados_painel_aura.json?cache='+Date.now()).then(r=>r.json()),fetch('projetos_extra.json?cache='+Date.now()).then(r=>r.ok?r.json():{}).catch(()=>({}))]).then(([d,e])=>aplicarExtras(d,e)).then(d=>{d.dashboard=calc(d);document.title='Painel Executivo COI v'+(d.versao||'');$('menuVersion').textContent='Painel COI v'+(d.versao||'');$('jsonVersion').textContent='Base JSON: v'+(d.versao||'');$('jsonUpdate').textContent='Atualização: '+(d.ultimaAtualizacao||'');render(d)}).catch(err=>{$('app').innerHTML='<b>Erro ao carregar o painel.</b><br>'+esc(err.message||err)});
+const app = document.getElementById('app');
+const menuVersion = document.getElementById('menuVersion');
+const jsonVersion = document.getElementById('jsonVersion');
+const jsonUpdate = document.getElementById('jsonUpdate');
+
+function txt(v){ return v === undefined || v === null ? '' : String(v); }
+function esc(v){ return txt(v).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+function pessoa(v){ return esc(v).replace(/\bDaiana\b/g,'Daiane Ribeiro').replace(/\bDaiane\b(?!\s+Ribeiro)/g,'Daiane Ribeiro'); }
+function done(x){ return /concluído|concluido|finalizado|finalizada/i.test(txt(x.status)); }
+function badge(v){ return v ? '<span class="badge">' + esc(v) + '</span>' : ''; }
+
+function aplicarExtras(base, extra){
+  extra = extra || {};
+  base.projetos = base.projetos || [];
+  base.tarefasConcluidas = base.tarefasConcluidas || [];
+  base.pendencias = base.pendencias || [];
+  base.proximasEntregas = base.proximasEntregas || {};
+  base.proximasEntregas.proximos15Dias = base.proximasEntregas.proximos15Dias || [];
+  base.proximasEntregas.emAndamento = base.proximasEntregas.emAndamento || [];
+  base.proximasEntregas.concluidosRecentemente = base.proximasEntregas.concluidosRecentemente || [];
+
+  (extra.ajustesProjetos || []).forEach(a => {
+    const p = base.projetos.find(x => x.nome === a.nomeOriginal || x.nome === a.nome);
+    if (!p) return;
+    if (a.nome) p.nome = a.nome;
+    if (a.objetivo) p.objetivo = a.objetivo;
+    if (a.ultimaAtualizacao) p.ultimaAtualizacao = a.ultimaAtualizacao;
+    if (a.area) p.area = a.area;
+    p.atividades = p.atividades || [];
+    (a.atividadesRemover || []).forEach(r => { p.atividades = p.atividades.filter(x => x !== r); });
+    (a.atividadesAdicionar || []).forEach(x => { if (!p.atividades.includes(x)) p.atividades.push(x); });
+  });
+
+  (extra.projetos || []).forEach(p => { if (!base.projetos.some(x => x.nome === p.nome)) base.projetos.push(p); });
+  (extra.tarefasConcluidas || []).forEach(t => { if (!base.tarefasConcluidas.some(x => x.projeto === t.projeto && x.data === t.data && x.tarefa === t.tarefa)) base.tarefasConcluidas.push(t); });
+  (extra.pendencias || []).forEach(p => { if (!base.pendencias.some(x => x.projeto === p.projeto && x.pendencia === p.pendencia)) base.pendencias.push(p); });
+  (extra.concluidosRecentemente || []).forEach(e => { if (!base.proximasEntregas.concluidosRecentemente.some(x => x.projeto === e.projeto && x.data === e.data && x.entrega === e.entrega)) base.proximasEntregas.concluidosRecentemente.unshift(e); });
+
+  if (extra.versaoExtra) base.versao = extra.versaoExtra;
+  if (extra.ultimaAtualizacaoExtra) base.ultimaAtualizacao = extra.ultimaAtualizacaoExtra;
+  if (extra.observacaoExtra) base.observacao = extra.observacaoExtra;
+  return base;
+}
+
+function lista(arr){
+  if (!arr || !arr.length) return '<p class="empty">Sem registros.</p>';
+  return '<ul>' + arr.map(x => '<li>' + pessoa(x) + '</li>').join('') + '</ul>';
+}
+
+function cardProjeto(p){
+  return '<article class="card"><h3>' + esc(p.nome) + '</h3>' +
+    '<div class="meta">Responsável: ' + pessoa(p.responsavel) + '<br>Início: ' + esc(p.inicio || 'A definir') + ' | Previsão: ' + esc(p.previsaoConclusao || 'A definir') + '</div>' +
+    '<p>' + esc(p.objetivo || '') + '</p>' +
+    badge(p.status) + badge(p.prioridade) + badge(p.progresso ? 'Progresso: ' + p.progresso : '') +
+    '<details><summary>Ver detalhes</summary>' + lista(p.atividades) + '</details></article>';
+}
+
+function render(data){
+  const projetos = data.projetos || [];
+  const ativos = projetos.filter(p => !done(p));
+  const tarefas = data.tarefasConcluidas || [];
+  const pendencias = data.pendencias || [];
+  const entregas = data.proximasEntregas || {};
+  const recentes = entregas.concluidosRecentemente || [];
+  const areas = [...new Set(projetos.map(p => p.area || 'OUTROS'))];
+
+  menuVersion.textContent = 'Painel COI v' + (data.versao || '');
+  jsonVersion.textContent = 'Base JSON: v' + (data.versao || '');
+  jsonUpdate.textContent = 'Atualização: ' + (data.ultimaAtualizacao || '');
+
+  let html = '';
+  html += '<div class="note"><b>Painel carregado.</b><br><b>Última atualização:</b> ' + esc(data.ultimaAtualizacao || '') + '<br><b>Gerente MDS:</b> Daiane Ribeiro<br>' + esc(data.observacao || '') + '</div>';
+  html += '<section id="dashboard" class="section"><h2>Dashboard Executivo</h2><div class="metrics">' +
+    '<div class="metric"><span>Projetos ativos</span><strong>' + ativos.length + '</strong></div>' +
+    '<div class="metric"><span>Total de projetos</span><strong>' + projetos.length + '</strong></div>' +
+    '<div class="metric"><span>Tarefas concluídas</span><strong>' + tarefas.length + '</strong></div>' +
+    '<div class="metric"><span>Pendências</span><strong>' + pendencias.length + '</strong></div>' +
+    '<div class="metric"><span>Concluídos recentes</span><strong>' + recentes.length + '</strong></div>' +
+    '<div class="metric"><span>Frentes</span><strong>' + areas.length + '</strong></div>' +
+    '</div></section>';
+
+  html += '<section id="projetos" class="section"><h2>Projetos por Frente</h2>';
+  areas.forEach(area => {
+    const ps = projetos.filter(p => (p.area || 'OUTROS') === area && !done(p));
+    if (!ps.length) return;
+    html += '<div class="area-panel"><div class="area-head"><h3>📁 ' + esc(area) + '</h3><span class="area-count">' + ps.length + ' projeto(s)</span></div><div class="project-grid">' + ps.map(cardProjeto).join('') + '</div></div>';
+  });
+  html += '</section>';
+
+  html += '<section id="tarefas" class="section"><h2>Tarefas Concluídas</h2><div class="task-grid">' + tarefas.slice(-12).reverse().map(t => '<article class="task-card"><h3>' + esc(t.tarefa) + '</h3><div class="meta">Projeto: ' + esc(t.projeto) + '<br>Data: ' + esc(t.data) + '<br>Responsável: ' + pessoa(t.responsavel) + '</div>' + badge(t.status) + '</article>').join('') + '</div></section>';
+
+  html += '<section id="pendencias" class="section"><h2>Pendências Executivas</h2><div class="tablewrap"><table><thead><tr><th>Prazo</th><th>Pendência</th><th>Projeto</th><th>Responsável</th><th>Status</th></tr></thead><tbody>' + pendencias.map(p => '<tr><td>' + esc(p.prazo) + '</td><td>' + esc(p.pendencia) + '</td><td>' + esc(p.projeto) + '</td><td>' + pessoa(p.responsavel) + '</td><td>' + badge(p.status) + '</td></tr>').join('') + '</tbody></table></div></section>';
+
+  app.className = '';
+  app.innerHTML = html;
+}
+
+async function iniciar(){
+  try {
+    app.innerHTML = 'Carregando dados...';
+    const base = await fetch('dados_painel_aura.json?cache=' + Date.now()).then(r => { if (!r.ok) throw new Error('Falha no dados_painel_aura.json'); return r.json(); });
+    let extra = {};
+    try { extra = await fetch('projetos_extra.json?cache=' + Date.now()).then(r => r.ok ? r.json() : {}); } catch(e) { extra = {}; }
+    render(aplicarExtras(base, extra));
+  } catch (err) {
+    app.className = 'note';
+    app.innerHTML = '<b>Erro ao carregar o painel.</b><br>' + esc(err.message || err);
+  }
+}
+
+iniciar();
