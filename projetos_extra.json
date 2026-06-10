@@ -1,1 +1,411 @@
-{"versaoExtra":"10.7","ultimaAtualizacaoExtra":"2026-06-05","observacaoExtra":"Inclusão da nova demanda MDS - Avaliação de Expansão da VPN para Operadores Remotos, iniciada em 05/06/2026 após alinhamento com Marcos Souza.","ajustesProjetos":[{"nomeOriginal":"MDS - Formulário de Ouvidoria","nome":"MDS - Sistema de Ouvidoria (Ouvsuas)","objetivo":"Acompanhar a evolução do Sistema de Ouvidoria (Ouvsuas) para o MDS, incluindo handoff técnico, alinhamento com a equipe TD e definição do prazo de início do projeto.","ultimaAtualizacao":"03/06/2026","atividadesRemover":["✅ Apresentação do Sistema Formulário de Ouvidoria realizada em 29/05/2026","✅ 29/05/2026 - Apresentação do Sistema de Ouvidoria (Ouvsuas) realizada para a Diretoria de Gestão de Portfólio de Produtos, com demonstração da solução, contextualização do escopo funcional e alinhamento inicial sobre a evolução do projeto no âmbito do MDS"],"atividadesAdicionar":["✅ 02/06/2026 - Apresentação de handoff realizada para a equipe TD","⏳ Definição do prazo para início do projeto pela equipe TD"]},{"nomeOriginal":"MDS - WFM Workforce Management","nome":"MDS - WFM Workforce Management","objetivo":"Apresentar e avaliar o produto WFM como projeto vinculado ao MDS, mantendo no projeto específico apenas as atividades de avaliação, aderência e viabilidade.","ultimaAtualizacao":"05/06/2026","atividadesRemover":["✅ Apresentação do Produto WFM realizada em 02/06/2026","✅ Apresentação do produto WFM realizada em 02/06/2026","✅ 02/06/2026 16:00 - Apresentação do produto WFM (gerenciamento da força de trabalho) realizada para avaliação da equipe de novos produtos"]}],"projetos":[{"nome":"CENTRAL DF - Plataforma Inteligente de Campanhas Digitais AURA","area":"CENTRAL DF","responsavel":"Anderson Pinheiro / Bruno Nakakura Alves - Equipe COI, Equipe IA, Equipe TD e Equipe AURA","status":"Em andamento","prioridade":"Alta","inicio":"Junho/2026","ultimaAtualizacao":"03/06/2026","previsaoConclusao":"Agosto/2026","competencia":"Junho/2026","progresso":"25%","categoria":"Comunicação Omnichannel / WhatsApp / Voicebot / Automação / Inteligência Artificial","objetivo":"Implantar uma plataforma corporativa de comunicação digital baseada na solução AURA, permitindo o gerenciamento centralizado de campanhas digitais, integração com APIs corporativas, utilização de Inteligência Artificial para automação de fluxos, monitoramento operacional, governança de campanhas e futura integração omnichannel entre WhatsApp, Voicebot e URA.","atividades":["✅ 03/06/2026 10h30 - Reunião de apresentação da plataforma AURA de disparos concluída conforme programado","✅ Apresentação da Plataforma AURA","✅ Demonstração da arquitetura da solução","✅ Demonstração dos dashboards operacionais e executivos","✅ Demonstração do módulo de campanhas e templates","✅ Demonstração do assistente de IA para construção de workflows","✅ Demonstração da integração com Meta WhatsApp, CitSmart e Keycloak","✅ Demonstração dos recursos de auditoria, rastreabilidade e controle LGPD","✅ Validação da estratégia de homologação por meio de piloto assistido","✅ Definição do roadmap inicial do projeto","⏳ Fase 1 - Piloto assistido com mailing de teste em produção","⏳ Fase 2 - Integração via API, com caso inicial Campanha Bombeiros","⏳ Fase 3 - Campanhas de alta volumetria","⏳ Fase 4 - Integração Omnichannel WhatsApp + Voicebot","⏳ Fase 5 - Plataforma Inteligente de Comunicação Digital"]},{"nome":"COI - Gestão de Portfólio de Produtos - Etapa de Embarque de Produtos","area":"COI","responsavel":"Daiane / Anderson Pinheiro / Equipe Produtos / Vinicius Bastos / Rafael Carvalho","status":"Em andamento","prioridade":"Média","inicio":"29/05/2026","ultimaAtualizacao":"03/06/2026","previsaoConclusao":"A definir","competencia":"Junho/2026","progresso":"30%","categoria":"Gestão de Portfólio / Embarque de Produtos / Avaliação de Produtos / COI","objetivo":"Conduzir a etapa transversal de embarque e avaliação de novos produtos no âmbito do COI, apoiando a Diretoria de Gestão de Portfólio de Produtos na apresentação, análise, priorização e acompanhamento de soluções com potencial de evolução para diferentes projetos do COI.","atividades":["✅ 29/05/2026 11:00 - 11:30 - Apresentação do Sistema Formulário de Ouvidoria realizada para a Diretoria de Gestão de Portfólio de Produtos","✅ 02/06/2026 16:00 - Apresentação do produto WFM (gerenciamento da força de trabalho) realizada para avaliação da equipe de novos produtos","⏳ Avaliação técnica e funcional dos produtos apresentados","⏳ Definição dos critérios de embarque de produtos no portfólio COI","⏳ Priorização dos produtos com potencial de continuidade em diferentes projetos","⏳ Consolidação dos encaminhamentos com Vinicius Bastos e Rafael Carvalho","⏳ Definição do roadmap de evolução dos produtos avaliados"]},{"nome":"MDS - Avaliação de Expansão da VPN para Operadores Remotos","area":"MDS","responsavel":"Anderson Pinheiro / Daiana / Equipe CIOT","status":"Em análise","prioridade":"Média","inicio":"05/06/2026","ultimaAtualizacao":"05/06/2026","previsaoConclusao":"A definir","competencia":"Junho/2026","progresso":"15%","categoria":"Infraestrutura / VPN / Operação Remota / Telefonia","objetivo":"Avaliar a necessidade, viabilidade técnica e impactos operacionais da ampliação do uso da VPN do MDS para mais operadores, considerando relatos de problemas de desempenho nas ligações e indícios de melhoria quando o acesso ocorre por meio da VPN.","atividades":["✅ 05/06/2026 - Alinhamento inicial realizado com Marcos Souza sobre o início da demanda e o uso atual da VPN do MDS","✅ Identificação de operadores com problemas de desempenho nas ligações","✅ Confirmação de que a VPN foi criada inicialmente para operadores remotos com problemas específicos de internet","✅ Registro da necessidade de avaliar a expansão do acesso VPN para mais operadores","⏳ Realizar alinhamento técnico com a equipe CIOT e responsáveis pela infraestrutura","⏳ Avaliar a arquitetura atual da VPN e seus limites de expansão","⏳ Identificar quantitativo de operadores impactados por problemas de internet ou desempenho nas ligações","⏳ Avaliar riscos de ampliação do uso da VPN com conta local","⏳ Definir modelo adequado de autenticação e gestão de identidade","⏳ Definir critérios para concessão de acesso VPN","⏳ Avaliar se a solução deve permanecer como contingência ou evoluir para arquitetura estruturada","⏳ Consolidar encaminhamento técnico e operacional com Marcos Souza, Anderson, Daiana e equipe CIOT"]}],"tarefasConcluidasRemover":[{"projeto":"MDS - Sistema de Ouvidoria (Ouvsuas)","data":"29/05/2026 11:00 - 11:30"},{"projeto":"MDS - Formulário de Ouvidoria","data":"29/05/2026 11:00 - 11:30"},{"projeto":"MDS - WFM Workforce Management","data":"02/06/2026 16:00"}],"tarefasConcluidas":[{"mes":"Junho/2026","data":"03/06/2026 10:30","projeto":"CENTRAL DF - Plataforma Inteligente de Campanhas Digitais AURA","tarefa":"Reunião de apresentação da plataforma AURA de disparos concluída conforme programado, com demonstração da solução, dashboards, campanhas, templates, IA, integrações, auditoria, LGPD e roadmap inicial.","responsavel":"Equipe COI / AURA","status":"Concluído"},{"mes":"Junho/2026","data":"02/06/2026","projeto":"MDS - Sistema de Ouvidoria (Ouvsuas)","tarefa":"Apresentação de handoff realizada para a equipe TD","responsavel":"Anderson Pinheiro / Daiane / Equipe TD","status":"Concluído"},{"mes":"Maio/2026","data":"29/05/2026 11:00 - 11:30","projeto":"COI - Gestão de Portfólio de Produtos - Etapa de Embarque de Produtos","tarefa":"Apresentação do Sistema Formulário de Ouvidoria realizada para a Diretoria de Gestão de Portfólio de Produtos","responsavel":"Daiane / Anderson Pinheiro / Equipe Produtos / Vinicius Bastos / Rafael Carvalho","status":"Concluído"},{"mes":"Junho/2026","data":"02/06/2026 16:00","projeto":"COI - Gestão de Portfólio de Produtos - Etapa de Embarque de Produtos","tarefa":"Apresentação do produto WFM (gerenciamento da força de trabalho) realizada para avaliação da equipe de novos produtos","responsavel":"Daiane / Anderson Pinheiro / Equipe Produtos / Vinicius Bastos / Rafael Carvalho","status":"Concluído"},{"mes":"Junho/2026","data":"05/06/2026","projeto":"MDS - Avaliação de Expansão da VPN para Operadores Remotos","tarefa":"Alinhamento inicial realizado com Marcos Souza sobre o início da demanda, uso atual da VPN do MDS e necessidade de avaliar expansão para mais operadores com problemas de desempenho nas ligações.","responsavel":"Anderson Pinheiro / Marcos Souza","status":"Concluído"}],"pendencias":[{"prazo":"A definir","pendencia":"Definir prazo para início do projeto Sistema de Ouvidoria (Ouvsuas) pela equipe TD","projeto":"MDS - Sistema de Ouvidoria (Ouvsuas)","responsavel":"Equipe TD / Anderson Pinheiro / Daiane","status":"Pendente"},{"prazo":"A definir","pendencia":"Definir critérios e próximos passos para embarque dos produtos avaliados no portfólio COI","projeto":"COI - Gestão de Portfólio de Produtos - Etapa de Embarque de Produtos","responsavel":"Vinicius Bastos / Rafael Carvalho / Daiane / Anderson Pinheiro","status":"Pendente"},{"prazo":"A definir","pendencia":"Realizar alinhamento técnico com a equipe CIOT para avaliar a expansão da VPN do MDS para mais operadores","projeto":"MDS - Avaliação de Expansão da VPN para Operadores Remotos","responsavel":"Anderson Pinheiro / Daiana / Equipe CIOT","status":"Pendente"},{"prazo":"A definir","pendencia":"Levantar quantidade de operadores com problemas recorrentes de internet ou desempenho nas ligações","projeto":"MDS - Avaliação de Expansão da VPN para Operadores Remotos","responsavel":"Anderson Pinheiro / Daiana / Equipe CIOT","status":"Pendente"},{"prazo":"A definir","pendencia":"Avaliar se a arquitetura atual da VPN suporta ampliação ou se será necessário redesenho da solução de acesso remoto","projeto":"MDS - Avaliação de Expansão da VPN para Operadores Remotos","responsavel":"Anderson Pinheiro / Daiana / Equipe CIOT","status":"Pendente"}],"concluidosRecentementeRemover":[{"projeto":"MDS - Sistema de Ouvidoria (Ouvsuas)","data":"29/05/2026"},{"projeto":"MDS - WFM Workforce Management","data":"02/06/2026"}],"concluidosRecentemente":[{"data":"05/06/2026","projeto":"MDS - Avaliação de Expansão da VPN para Operadores Remotos","entrega":"Alinhamento inicial realizado com Marcos Souza sobre o início da demanda e a necessidade de avaliar a expansão da VPN do MDS para mais operadores.","responsavel":"Anderson Pinheiro / Marcos Souza","status":"Concluído"},{"data":"03/06/2026","projeto":"CENTRAL DF - Plataforma Inteligente de Campanhas Digitais AURA","entrega":"Reunião de apresentação da plataforma AURA de disparos concluída às 10h30, com definição do roadmap inicial do projeto.","responsavel":"Equipe COI / AURA","status":"Concluído"},{"data":"02/06/2026","projeto":"MDS - Sistema de Ouvidoria (Ouvsuas)","entrega":"Apresentação de handoff realizada para a equipe TD.","responsavel":"Anderson Pinheiro / Daiane / Equipe TD","status":"Concluído"},{"data":"29/05/2026","projeto":"COI - Gestão de Portfólio de Produtos - Etapa de Embarque de Produtos","entrega":"Apresentação do Sistema Formulário de Ouvidoria realizada para a Diretoria de Gestão de Portfólio de Produtos.","responsavel":"Daiane / Anderson Pinheiro / Equipe Produtos / Vinicius Bastos / Rafael Carvalho","status":"Concluído"},{"data":"02/06/2026","projeto":"COI - Gestão de Portfólio de Produtos - Etapa de Embarque de Produtos","entrega":"Apresentação do produto WFM (gerenciamento da força de trabalho) realizada para avaliação da equipe de novos produtos.","responsavel":"Daiane / Anderson Pinheiro / Equipe Produtos / Vinicius Bastos / Rafael Carvalho","status":"Concluído"}]}
+{
+    "versaoExtra":  "10.8",
+    "ultimaAtualizacaoExtra":  "2026-06-08",
+    "observacaoExtra":  "Publicação de demandas da CENTRAL DF: renovação do AIOps, Painel BI de Consumo e Billing Gupshup e crédito emergencial Gupshup.",
+    "ajustesProjetos":  [
+                            {
+                                "nomeOriginal":  "MDS - Formulário de Ouvidoria",
+                                "nome":  "MDS - Sistema de Ouvidoria (Ouvsuas)",
+                                "objetivo":  "Acompanhar a evolução do Sistema de Ouvidoria (Ouvsuas) para o MDS, incluindo handoff técnico, alinhamento com a equipe TD e definição do prazo de início do projeto.",
+                                "ultimaAtualizacao":  "03/06/2026",
+                                "atividadesRemover":  [
+                                                          "✅ Apresentação do Sistema Formulário de Ouvidoria realizada em 29/05/2026",
+                                                          "✅ 29/05/2026 - Apresentação do Sistema de Ouvidoria (Ouvsuas) realizada para a Diretoria de Gestão de Portfólio de Produtos, com demonstração da solução, contextualização do escopo funcional e alinhamento inicial sobre a evolução do projeto no âmbito do MDS"
+                                                      ],
+                                "atividadesAdicionar":  [
+                                                            "✅ 02/06/2026 - Apresentação de handoff realizada para a equipe TD",
+                                                            "⏳ Definição do prazo para início do projeto pela equipe TD"
+                                                        ]
+                            },
+                            {
+                                "nomeOriginal":  "MDS - WFM Workforce Management",
+                                "nome":  "MDS - WFM Workforce Management",
+                                "objetivo":  "Apresentar e avaliar o produto WFM como projeto vinculado ao MDS, mantendo no projeto específico apenas as atividades de avaliação, aderência e viabilidade.",
+                                "ultimaAtualizacao":  "05/06/2026",
+                                "atividadesRemover":  [
+                                                          "✅ Apresentação do Produto WFM realizada em 02/06/2026",
+                                                          "✅ Apresentação do produto WFM realizada em 02/06/2026",
+                                                          "✅ 02/06/2026 16:00 - Apresentação do produto WFM (gerenciamento da força de trabalho) realizada para avaliação da equipe de novos produtos"
+                                                      ]
+                            }
+                        ],
+    "projetos":  [
+                     {
+                         "nome":  "CENTRAL DF - Plataforma Inteligente de Campanhas Digitais AURA",
+                         "area":  "CENTRAL DF",
+                         "responsavel":  "Anderson Pinheiro / Bruno Nakakura Alves - Equipe COI, Equipe IA, Equipe TD e Equipe AURA",
+                         "status":  "Em andamento",
+                         "prioridade":  "Alta",
+                         "inicio":  "Junho/2026",
+                         "ultimaAtualizacao":  "03/06/2026",
+                         "previsaoConclusao":  "Agosto/2026",
+                         "competencia":  "Junho/2026",
+                         "progresso":  "25%",
+                         "categoria":  "Comunicação Omnichannel / WhatsApp / Voicebot / Automação / Inteligência Artificial",
+                         "objetivo":  "Implantar uma plataforma corporativa de comunicação digital baseada na solução AURA, permitindo o gerenciamento centralizado de campanhas digitais, integração com APIs corporativas, utilização de Inteligência Artificial para automação de fluxos, monitoramento operacional, governança de campanhas e futura integração omnichannel entre WhatsApp, Voicebot e URA.",
+                         "atividades":  [
+                                            "✅ 03/06/2026 10h30 - Reunião de apresentação da plataforma AURA de disparos concluída conforme programado",
+                                            "✅ Apresentação da Plataforma AURA",
+                                            "✅ Demonstração da arquitetura da solução",
+                                            "✅ Demonstração dos dashboards operacionais e executivos",
+                                            "✅ Demonstração do módulo de campanhas e templates",
+                                            "✅ Demonstração do assistente de IA para construção de workflows",
+                                            "✅ Demonstração da integração com Meta WhatsApp, CitSmart e Keycloak",
+                                            "✅ Demonstração dos recursos de auditoria, rastreabilidade e controle LGPD",
+                                            "✅ Validação da estratégia de homologação por meio de piloto assistido",
+                                            "✅ Definição do roadmap inicial do projeto",
+                                            "⏳ Fase 1 - Piloto assistido com mailing de teste em produção",
+                                            "⏳ Fase 2 - Integração via API, com caso inicial Campanha Bombeiros",
+                                            "⏳ Fase 3 - Campanhas de alta volumetria",
+                                            "⏳ Fase 4 - Integração Omnichannel WhatsApp + Voicebot",
+                                            "⏳ Fase 5 - Plataforma Inteligente de Comunicação Digital"
+                                        ]
+                     },
+                     {
+                         "nome":  "COI - Gestão de Portfólio de Produtos - Etapa de Embarque de Produtos",
+                         "area":  "COI",
+                         "responsavel":  "Daiane / Anderson Pinheiro / Equipe Produtos / Vinicius Bastos / Rafael Carvalho",
+                         "status":  "Em andamento",
+                         "prioridade":  "Média",
+                         "inicio":  "29/05/2026",
+                         "ultimaAtualizacao":  "03/06/2026",
+                         "previsaoConclusao":  "A definir",
+                         "competencia":  "Junho/2026",
+                         "progresso":  "30%",
+                         "categoria":  "Gestão de Portfólio / Embarque de Produtos / Avaliação de Produtos / COI",
+                         "objetivo":  "Conduzir a etapa transversal de embarque e avaliação de novos produtos no âmbito do COI, apoiando a Diretoria de Gestão de Portfólio de Produtos na apresentação, análise, priorização e acompanhamento de soluções com potencial de evolução para diferentes projetos do COI.",
+                         "atividades":  [
+                                            "✅ 29/05/2026 11:00 - 11:30 - Apresentação do Sistema Formulário de Ouvidoria realizada para a Diretoria de Gestão de Portfólio de Produtos",
+                                            "✅ 02/06/2026 16:00 - Apresentação do produto WFM (gerenciamento da força de trabalho) realizada para avaliação da equipe de novos produtos",
+                                            "⏳ Avaliação técnica e funcional dos produtos apresentados",
+                                            "⏳ Definição dos critérios de embarque de produtos no portfólio COI",
+                                            "⏳ Priorização dos produtos com potencial de continuidade em diferentes projetos",
+                                            "⏳ Consolidação dos encaminhamentos com Vinicius Bastos e Rafael Carvalho",
+                                            "⏳ Definição do roadmap de evolução dos produtos avaliados"
+                                        ]
+                     },
+                     {
+                         "nome":  "MDS - Avaliação de Expansão da VPN para Operadores Remotos",
+                         "area":  "MDS",
+                         "responsavel":  "Anderson Pinheiro / Daiana / Equipe CIOT",
+                         "status":  "Em análise",
+                         "prioridade":  "Média",
+                         "inicio":  "05/06/2026",
+                         "ultimaAtualizacao":  "05/06/2026",
+                         "previsaoConclusao":  "A definir",
+                         "competencia":  "Junho/2026",
+                         "progresso":  "15%",
+                         "categoria":  "Infraestrutura / VPN / Operação Remota / Telefonia",
+                         "objetivo":  "Avaliar a necessidade, viabilidade técnica e impactos operacionais da ampliação do uso da VPN do MDS para mais operadores, considerando relatos de problemas de desempenho nas ligações e indícios de melhoria quando o acesso ocorre por meio da VPN.",
+                         "atividades":  [
+                                            "✅ 05/06/2026 - Alinhamento inicial realizado com Marcos Souza sobre o início da demanda e o uso atual da VPN do MDS",
+                                            "✅ Identificação de operadores com problemas de desempenho nas ligações",
+                                            "✅ Confirmação de que a VPN foi criada inicialmente para operadores remotos com problemas específicos de internet",
+                                            "✅ Registro da necessidade de avaliar a expansão do acesso VPN para mais operadores",
+                                            "⏳ Realizar alinhamento técnico com a equipe CIOT e responsáveis pela infraestrutura",
+                                            "⏳ Avaliar a arquitetura atual da VPN e seus limites de expansão",
+                                            "⏳ Identificar quantitativo de operadores impactados por problemas de internet ou desempenho nas ligações",
+                                            "⏳ Avaliar riscos de ampliação do uso da VPN com conta local",
+                                            "⏳ Definir modelo adequado de autenticação e gestão de identidade",
+                                            "⏳ Definir critérios para concessão de acesso VPN",
+                                            "⏳ Avaliar se a solução deve permanecer como contingência ou evoluir para arquitetura estruturada",
+                                            "⏳ Consolidar encaminhamento técnico e operacional com Marcos Souza, Anderson, Daiana e equipe CIOT"
+                                        ]
+                     },
+                     {
+                         "nome":  "CENTRAL DF - Renovação de Licenciamento AIOps",
+                         "area":  "CENTRAL DF",
+                         "responsavel":  "Anderson Pinheiro",
+                         "contato":  "não publicado",
+                         "status":  "Em acompanhamento",
+                         "prioridade":  "Alta",
+                         "inicio":  "08/06/2026",
+                         "ultimaAtualizacao":  "08/06/2026",
+                         "previsaoConclusao":  "A definir",
+                         "competencia":  "Junho/2026",
+                         "progresso":  "30%",
+                         "categoria":  "AIOps / Licenciamento / Continuidade Operacional",
+                         "objetivo":  "Acompanhar a renovação da licença AIOps para garantir a continuidade do monitoramento operacional.",
+                         "resumoExecutivo":  "Chamado aberto para acompanhamento da renovação da licença AIOps, garantindo continuidade do monitoramento operacional.",
+                         "proximoPasso":  "Acompanhar o chamado até a conclusão da renovação e validar a regularização da licença no ambiente.",
+                         "atividades":  [
+                                            "08/06/2026 - Chamado nº 518190 aberto para renovação da licença AIOps",
+                                            "Acompanhar andamento do chamado nº 518190 até a conclusão da renovação da licença",
+                                            "Validar regularização da licença no ambiente após atendimento do chamado"
+                                        ]
+                     },
+                     {
+                         "nome":  "CENTRAL DF - Painel BI de Consumo e Billing Gupshup",
+                         "area":  "CENTRAL DF",
+                         "responsavel":  "Anderson Pinheiro / Bruno Nakakura Alves",
+                         "contato":  "não publicado",
+                         "status":  "Em análise",
+                         "prioridade":  "Média",
+                         "inicio":  "08/06/2026",
+                         "ultimaAtualizacao":  "08/06/2026",
+                         "previsaoConclusao":  "A definir",
+                         "competencia":  "Junho/2026",
+                         "progresso":  "15%",
+                         "categoria":  "BI / Gupshup / Billing / Consumo / Campanhas Digitais",
+                         "objetivo":  "Avaliar a viabilidade técnica de criação de um Painel BI para acompanhamento de consumo, billing, saldo, templates, campanhas e indicadores operacionais da solução Gupshup.",
+                         "resumoExecutivo":  "Avaliar a viabilidade técnica de criação de um Painel BI para acompanhamento de consumo, billing, saldo, templates, campanhas e indicadores operacionais da solução Gupshup.",
+                         "proximoPasso":  "Validar quais APIs, webhooks ou bases intermediárias atendem aos indicadores necessários para o painel.",
+                         "atividades":  [
+                                            "08/06/2026 - Recebimento das informações iniciais do broker Gupshup para análise do Painel BI",
+                                            "Identificação de que não existe API única e pronta no painel da Gupshup para atender toda a visão do dashboard",
+                                            "Estruturação da demanda para avaliação técnica e operacional",
+                                            "Validar aderência das APIs disponíveis aos indicadores necessários",
+                                            "Avaliar possibilidade de uso de eventos via webhook",
+                                            "Avaliar necessidade de base intermediária antes do Power BI",
+                                            "Consolidar indicadores finais para o dashboard operacional e financeiro"
+                                        ]
+                     },
+                     {
+                         "nome":  "CENTRAL DF - Solicitação de Crédito Emergencial para Conta Gupshup",
+                         "area":  "CENTRAL DF",
+                         "responsavel":  "Anderson Pinheiro",
+                         "contato":  "não publicado",
+                         "status":  "Concluído",
+                         "prioridade":  "Alta",
+                         "inicio":  "08/06/2026",
+                         "ultimaAtualizacao":  "08/06/2026",
+                         "previsaoConclusao":  "08/06/2026",
+                         "competencia":  "Junho/2026",
+                         "progresso":  "100%",
+                         "categoria":  "Gupshup / Crédito Emergencial / Continuidade Operacional",
+                         "chamado":  "517671",
+                         "valorFinanceiro":  "US$ 10.000,00 / R$ 53.851,62",
+                         "objetivo":  "Registrar a solicitação de crédito emergencial para continuidade operacional dos serviços e campanhas digitais vinculados à CENTRAL DF.",
+                         "resumoExecutivo":  "Demanda concluída com a formalização da solicitação de crédito emergencial para continuidade operacional dos serviços e campanhas digitais vinculados à CENTRAL DF.",
+                         "proximoPasso":  "Sem pendência operacional imediata. Registro mantido como demanda concluída.",
+                         "atividades":  [
+                                            "08/06/2026 - Formalização da solicitação de crédito emergencial",
+                                            "Abertura do chamado nº 517671",
+                                            "Registro executivo do valor financeiro autorizado",
+                                            "Encaminhamento da formalização aos responsáveis institucionais",
+                                            "Demanda concluída para fins de acompanhamento executivo"
+                                        ]
+                     }
+                 ],
+    "tarefasConcluidasRemover":  [
+                                     {
+                                         "projeto":  "MDS - Sistema de Ouvidoria (Ouvsuas)",
+                                         "data":  "29/05/2026 11:00 - 11:30"
+                                     },
+                                     {
+                                         "projeto":  "MDS - Formulário de Ouvidoria",
+                                         "data":  "29/05/2026 11:00 - 11:30"
+                                     },
+                                     {
+                                         "projeto":  "MDS - WFM Workforce Management",
+                                         "data":  "02/06/2026 16:00"
+                                     }
+                                 ],
+    "tarefasConcluidas":  [
+                              {
+                                  "mes":  "Junho/2026",
+                                  "data":  "03/06/2026 10:30",
+                                  "projeto":  "CENTRAL DF - Plataforma Inteligente de Campanhas Digitais AURA",
+                                  "tarefa":  "Reunião de apresentação da plataforma AURA de disparos concluída conforme programado, com demonstração da solução, dashboards, campanhas, templates, IA, integrações, auditoria, LGPD e roadmap inicial.",
+                                  "responsavel":  "Equipe COI / AURA",
+                                  "status":  "Concluído"
+                              },
+                              {
+                                  "mes":  "Junho/2026",
+                                  "data":  "02/06/2026",
+                                  "projeto":  "MDS - Sistema de Ouvidoria (Ouvsuas)",
+                                  "tarefa":  "Apresentação de handoff realizada para a equipe TD",
+                                  "responsavel":  "Anderson Pinheiro / Daiane / Equipe TD",
+                                  "status":  "Concluído"
+                              },
+                              {
+                                  "mes":  "Maio/2026",
+                                  "data":  "29/05/2026 11:00 - 11:30",
+                                  "projeto":  "COI - Gestão de Portfólio de Produtos - Etapa de Embarque de Produtos",
+                                  "tarefa":  "Apresentação do Sistema Formulário de Ouvidoria realizada para a Diretoria de Gestão de Portfólio de Produtos",
+                                  "responsavel":  "Daiane / Anderson Pinheiro / Equipe Produtos / Vinicius Bastos / Rafael Carvalho",
+                                  "status":  "Concluído"
+                              },
+                              {
+                                  "mes":  "Junho/2026",
+                                  "data":  "02/06/2026 16:00",
+                                  "projeto":  "COI - Gestão de Portfólio de Produtos - Etapa de Embarque de Produtos",
+                                  "tarefa":  "Apresentação do produto WFM (gerenciamento da força de trabalho) realizada para avaliação da equipe de novos produtos",
+                                  "responsavel":  "Daiane / Anderson Pinheiro / Equipe Produtos / Vinicius Bastos / Rafael Carvalho",
+                                  "status":  "Concluído"
+                              },
+                              {
+                                  "mes":  "Junho/2026",
+                                  "data":  "05/06/2026",
+                                  "projeto":  "MDS - Avaliação de Expansão da VPN para Operadores Remotos",
+                                  "tarefa":  "Alinhamento inicial realizado com Marcos Souza sobre o início da demanda, uso atual da VPN do MDS e necessidade de avaliar expansão para mais operadores com problemas de desempenho nas ligações.",
+                                  "responsavel":  "Anderson Pinheiro / Marcos Souza",
+                                  "status":  "Concluído"
+                              },
+                              {
+                                  "mes":  "Junho/2026",
+                                  "data":  "08/06/2026",
+                                  "projeto":  "CENTRAL DF - Renovação de Licenciamento AIOps",
+                                  "tarefa":  "Chamado nº 518190 aberto para acompanhamento da renovação da licença AIOps.",
+                                  "responsavel":  "Anderson Pinheiro",
+                                  "contato":  "não publicado",
+                                  "status":  "Concluído"
+                              },
+                              {
+                                  "mes":  "Junho/2026",
+                                  "data":  "08/06/2026",
+                                  "projeto":  "CENTRAL DF - Painel BI de Consumo e Billing Gupshup",
+                                  "tarefa":  "Estruturação da demanda para análise de viabilidade do Painel BI de consumo e billing Gupshup.",
+                                  "responsavel":  "Anderson Pinheiro / Bruno Nakakura Alves",
+                                  "contato":  "não publicado",
+                                  "status":  "Concluído"
+                              },
+                              {
+                                  "mes":  "Junho/2026",
+                                  "data":  "08/06/2026",
+                                  "projeto":  "CENTRAL DF - Solicitação de Crédito Emergencial para Conta Gupshup",
+                                  "tarefa":  "Formalização da solicitação de crédito emergencial, com chamado nº 517671 e registro financeiro executivo.",
+                                  "responsavel":  "Anderson Pinheiro",
+                                  "contato":  "não publicado",
+                                  "status":  "Concluído"
+                              }
+                          ],
+    "pendencias":  [
+                       {
+                           "prazo":  "A definir",
+                           "pendencia":  "Definir prazo para início do projeto Sistema de Ouvidoria (Ouvsuas) pela equipe TD",
+                           "projeto":  "MDS - Sistema de Ouvidoria (Ouvsuas)",
+                           "responsavel":  "Equipe TD / Anderson Pinheiro / Daiane",
+                           "status":  "Pendente"
+                       },
+                       {
+                           "prazo":  "A definir",
+                           "pendencia":  "Definir critérios e próximos passos para embarque dos produtos avaliados no portfólio COI",
+                           "projeto":  "COI - Gestão de Portfólio de Produtos - Etapa de Embarque de Produtos",
+                           "responsavel":  "Vinicius Bastos / Rafael Carvalho / Daiane / Anderson Pinheiro",
+                           "status":  "Pendente"
+                       },
+                       {
+                           "prazo":  "A definir",
+                           "pendencia":  "Realizar alinhamento técnico com a equipe CIOT para avaliar a expansão da VPN do MDS para mais operadores",
+                           "projeto":  "MDS - Avaliação de Expansão da VPN para Operadores Remotos",
+                           "responsavel":  "Anderson Pinheiro / Daiana / Equipe CIOT",
+                           "status":  "Pendente"
+                       },
+                       {
+                           "prazo":  "A definir",
+                           "pendencia":  "Levantar quantidade de operadores com problemas recorrentes de internet ou desempenho nas ligações",
+                           "projeto":  "MDS - Avaliação de Expansão da VPN para Operadores Remotos",
+                           "responsavel":  "Anderson Pinheiro / Daiana / Equipe CIOT",
+                           "status":  "Pendente"
+                       },
+                       {
+                           "prazo":  "A definir",
+                           "pendencia":  "Avaliar se a arquitetura atual da VPN suporta ampliação ou se será necessário redesenho da solução de acesso remoto",
+                           "projeto":  "MDS - Avaliação de Expansão da VPN para Operadores Remotos",
+                           "responsavel":  "Anderson Pinheiro / Daiana / Equipe CIOT",
+                           "status":  "Pendente"
+                       },
+                       {
+                           "prazo":  "A definir",
+                           "pendencia":  "Acompanhar o chamado nº 518190 até a conclusão da renovação da licença AIOps.",
+                           "projeto":  "CENTRAL DF - Renovação de Licenciamento AIOps",
+                           "responsavel":  "Anderson Pinheiro",
+                           "contato":  "não publicado",
+                           "status":  "Em acompanhamento"
+                       },
+                       {
+                           "prazo":  "A definir",
+                           "pendencia":  "Validar quais APIs, webhooks ou bases intermediárias atendem aos indicadores necessários para o Painel BI.",
+                           "projeto":  "CENTRAL DF - Painel BI de Consumo e Billing Gupshup",
+                           "responsavel":  "Anderson Pinheiro / Bruno Nakakura Alves",
+                           "contato":  "não publicado",
+                           "status":  "Pendente"
+                       }
+                   ],
+    "concluidosRecentementeRemover":  [
+                                          {
+                                              "projeto":  "MDS - Sistema de Ouvidoria (Ouvsuas)",
+                                              "data":  "29/05/2026"
+                                          },
+                                          {
+                                              "projeto":  "MDS - WFM Workforce Management",
+                                              "data":  "02/06/2026"
+                                          }
+                                      ],
+    "concluidosRecentemente":  [
+                                   {
+                                       "data":  "05/06/2026",
+                                       "projeto":  "MDS - Avaliação de Expansão da VPN para Operadores Remotos",
+                                       "entrega":  "Alinhamento inicial realizado com Marcos Souza sobre o início da demanda e a necessidade de avaliar a expansão da VPN do MDS para mais operadores.",
+                                       "responsavel":  "Anderson Pinheiro / Marcos Souza",
+                                       "status":  "Concluído"
+                                   },
+                                   {
+                                       "data":  "03/06/2026",
+                                       "projeto":  "CENTRAL DF - Plataforma Inteligente de Campanhas Digitais AURA",
+                                       "entrega":  "Reunião de apresentação da plataforma AURA de disparos concluída às 10h30, com definição do roadmap inicial do projeto.",
+                                       "responsavel":  "Equipe COI / AURA",
+                                       "status":  "Concluído"
+                                   },
+                                   {
+                                       "data":  "02/06/2026",
+                                       "projeto":  "MDS - Sistema de Ouvidoria (Ouvsuas)",
+                                       "entrega":  "Apresentação de handoff realizada para a equipe TD.",
+                                       "responsavel":  "Anderson Pinheiro / Daiane / Equipe TD",
+                                       "status":  "Concluído"
+                                   },
+                                   {
+                                       "data":  "29/05/2026",
+                                       "projeto":  "COI - Gestão de Portfólio de Produtos - Etapa de Embarque de Produtos",
+                                       "entrega":  "Apresentação do Sistema Formulário de Ouvidoria realizada para a Diretoria de Gestão de Portfólio de Produtos.",
+                                       "responsavel":  "Daiane / Anderson Pinheiro / Equipe Produtos / Vinicius Bastos / Rafael Carvalho",
+                                       "status":  "Concluído"
+                                   },
+                                   {
+                                       "data":  "02/06/2026",
+                                       "projeto":  "COI - Gestão de Portfólio de Produtos - Etapa de Embarque de Produtos",
+                                       "entrega":  "Apresentação do produto WFM (gerenciamento da força de trabalho) realizada para avaliação da equipe de novos produtos.",
+                                       "responsavel":  "Daiane / Anderson Pinheiro / Equipe Produtos / Vinicius Bastos / Rafael Carvalho",
+                                       "status":  "Concluído"
+                                   },
+                                   {
+                                       "data":  "08/06/2026",
+                                       "projeto":  "CENTRAL DF - Renovação de Licenciamento AIOps",
+                                       "entrega":  "Chamado nº 518190 aberto para acompanhamento da renovação da licença AIOps.",
+                                       "responsavel":  "Anderson Pinheiro",
+                                       "contato":  "não publicado",
+                                       "status":  "Concluído"
+                                   },
+                                   {
+                                       "data":  "08/06/2026",
+                                       "projeto":  "CENTRAL DF - Painel BI de Consumo e Billing Gupshup",
+                                       "entrega":  "Demanda estruturada para análise de viabilidade do Painel BI de consumo e billing Gupshup.",
+                                       "responsavel":  "Anderson Pinheiro / Bruno Nakakura Alves",
+                                       "contato":  "não publicado",
+                                       "status":  "Concluído"
+                                   },
+                                   {
+                                       "data":  "08/06/2026",
+                                       "projeto":  "CENTRAL DF - Solicitação de Crédito Emergencial para Conta Gupshup",
+                                       "entrega":  "Demanda concluída com a formalização da solicitação de crédito emergencial e registro do chamado nº 517671.",
+                                       "responsavel":  "Anderson Pinheiro",
+                                       "contato":  "não publicado",
+                                       "status":  "Concluído"
+                                   }
+                               ],
+    "demandasConcluidas":  [
+                               {
+                                   "titulo":  "CENTRAL DF - Solicitação de Crédito Emergencial para Conta Gupshup",
+                                   "projeto":  "CENTRAL DF - Solicitação de Crédito Emergencial para Conta Gupshup",
+                                   "responsavel":  "Anderson Pinheiro",
+                                   "contato":  "não publicado",
+                                   "periodo":  "08/06/2026",
+                                   "categoria":  "Gupshup / Crédito Emergencial / Continuidade Operacional",
+                                   "chamado":  "517671",
+                                   "valorFinanceiro":  "US$ 10.000,00 / R$ 53.851,62",
+                                   "resultado":  "Formalização da solicitação de crédito emergencial para continuidade operacional dos serviços e campanhas digitais vinculados à CENTRAL DF.",
+                                   "status":  "Concluído"
+                               }
+                           ]
+}
